@@ -9,12 +9,15 @@ import { Project } from '../models/project.model';
 })
 export class ProjectCardComponent implements OnInit {
     @Input() project!: Project;
-    @Input() showAll!: boolean;
     constructor(private router: Router) {}
 
     ngOnInit(): void {}
 
     goSingleProject() {
-        this.router.navigate(['projects', this.project.id]);
+        this.router.navigateByUrl(`projects/${this.project.id}`);
+    }
+
+    goAllProjects() {
+        this.router.navigateByUrl('projects');
     }
 }

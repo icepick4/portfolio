@@ -16,7 +16,7 @@ export class SingleProjectCardComponent implements OnInit {
     ) {}
 
     ngOnInit(): void {
-        const id = this.route.snapshot.params['id'];
+        const id = +this.route.snapshot.params['id'];
         this.project = this.portfolioService.getProjectById(id);
     }
 }

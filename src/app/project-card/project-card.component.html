@@ -3,9 +3,9 @@
     <div class="image">
         <img [src]="project.image" [alt]="project.name + ' image'">
     </div>
-    <div *ngIf="showAll">
-        <div class="description">{{project.description}}</div>
-        <div class="purpose">{{project.purpose}}</div>
+    <div class="tools">
+        <p>Tools</p>
+        <div *ngFor="let tool of project.tools" class="tool">{{tool}}</div>
     </div>
     <div class="url-git">
         <a [href]="project.urlGit" target="_blank">GitHub</a>
@@ -13,5 +13,5 @@
     <div class="urlProject">
         <a [href]="project.urlProject" target="_blank">Project</a>
     </div>
-    <button (click)="goSingleProject()">More</button>
+    <button (click)="goSingleProject()">See this project</button>
 </div>

@@ -7,6 +7,8 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { ProjectCardComponent } from './project-card/project-card.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { SingleProjectCardComponent } from './single-project-card/single-project-card.component';
+import { ButtonComponent } from './button/button.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,8 @@ import { SingleProjectCardComponent } from './single-project-card/single-project
     LandingPageComponent,
     ProjectsComponent,
     SingleProjectCardComponent,
+    ButtonComponent,
+    HeaderComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
