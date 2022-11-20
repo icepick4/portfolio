@@ -1,5 +1,8 @@
 body {
     background-color: #121111;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 @font-face {
@@ -13,7 +16,7 @@ body {
 
 a {
     text-decoration: none;
-    color: #fff;
+    color: #8d72e1;
     display: block;
     position: relative;
     padding: 0.2em 0;

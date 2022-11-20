@@ -38,8 +38,8 @@ export class PortfolioService {
         ),
         new Project(
             4,
-            'Tower of Hanoï',
-            'This project is a game inspired by the Tower of Hanoï. The game is a simple puzzle game where the player must move the disks from the first tower to the last one.',
+            'Tower of Hanoi',
+            'This project is a game inspired by the Tower of Hanoi. The game is a simple puzzle game where the player must move the disks from the first tower to the last one.',
             'This project was created to practice TypeScript and learn how to use Three.js.',
             ['TypeScript', 'Three.js'],
             'assets/4/image.gif',
