@@ -1,0 +1,17 @@
+<div class="card">
+    <div class="title">{{project.name}}</div>
+    <div class="image">
+        <img [src]="project.image" [alt]="project.name + ' image'">
+    </div>
+    <div *ngIf="showAll">
+        <div class="description">{{project.description}}</div>
+        <div class="purpose">{{project.purpose}}</div>
+    </div>
+    <div class="url-git">
+        <a [href]="project.urlGit" target="_blank">GitHub</a>
+    </div>
+    <div class="urlProject">
+        <a [href]="project.urlProject" target="_blank">Project</a>
+    </div>
+    <button (click)="goSingleProject()">More</button>
+</div>
