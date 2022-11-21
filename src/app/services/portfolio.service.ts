@@ -48,7 +48,7 @@ export class PortfolioService {
         ),
         new Project(
             5,
-            'Management of a digital directory',
+            'Directory manager',
             'This project is a C application that allows users to manage a digital directory. The application allows users to add, edit and delete contacts. Moreover, the application allows users to search for contacts, filter them and sort them.',
             'This project was created as part of my studies in the university. The main goal was to learn how to use the C language to manage data.',
             ['C'],
@@ -58,7 +58,7 @@ export class PortfolioService {
         ),
         new Project(
             6,
-            "Management of your rubik's cube sessions",
+            "Rubik's Cube sessions manager",
             "This project is a Python application that allows users to manage their rubik's cube sessions. The application allows users to store their times for each type of cube, and to see their progress instantly. Users can later see overall stats and daily stats that are updated automatically in each session.",
             "I created this project because Rubik's cube is one of my passions, and I wanted to have a tool to manage my sessions and my progress.",
             ['Python', 'Pygame'],

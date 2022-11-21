@@ -1,32 +1,43 @@
-<div class="card background--custom">
-    <div class="title">
-        <a [href]="project.urlGit" target="_blank" class="link-title">
-            {{project.name}}
-        </a>
-    </div>
-    <div class="content">
-        <div class="text">
-            <div class="tools">
-                <p>Tools</p>
-                <ul>
-                    <li *ngFor="let tool of project.tools" class="tool">{{tool}}</li>
-                </ul>
-            </div>
-            <div class="url-git">
-                <a [href]="project.urlGit" target="_blank" class="link">GitHub
-                    <img src="assets/images/github.png" alt="GitHub">
-                </a>
-            </div>
-            <div class="urlProject" *ngIf="project.urlProject != ''">
-                <a [href]="project.urlProject" target="_blank" class="link">Project
-                    <img src="assets/images/link.png" alt="Website">
-                </a>
+<div class="project">
+    <div class="card">
+        <div class="title">
+            <a routerLink="/projects/{{project.id}}">
+                {{project.name}}
+            </a>
+        </div>
+        <div class="content">
+            <a routerLink="/projects/{{project.id}}">
+                <div class="text">
+                    <div class="tools">
+                        <p>Tools</p>
+                        <ul>
+                            <li *ngFor="let tool of project.tools" class="tool">{{tool}}</li>
+                        </ul>
+                    </div>
 
-            </div>
-        </div>
-        <div class="image">
-            <img [src]="project.image" [alt]="project.name + ' image'">
+                </div>
+                <div class="image">
+                    <img [src]="project.image" [alt]="project.name + ' image'">
+                </div>
+            </a>
         </div>
     </div>
-    <button (click)="goSingleProject()" class="button">Learn more</button>
+    <div class="footer">
+        <div class="url-git">
+            <a [href]="project.urlGit" target="_blank" class="link">GitHub
+                <img src="assets/images/github.png" alt="GitHub">
+            </a>
+        </div>
+        <div class="url-project" *ngIf="project.urlProject != ''">
+            <a [href]="project.urlProject" target="_blank" class="link">Project
+                <img src="assets/images/link.png" alt="Website">
+            </a>
+
+        </div>
+        <div class="url-more">
+            <a routerLink="/projects/{{project.id}}" class="link">Learn more
+                <img src="assets/images/more.png" alt="More">
+            </a>
+        </div>
+    </div>
 </div>

@@ -1,10 +1,10 @@
 .card {
     margin: 40px;
-    width: 30vw;
-    height: 30vw;
-    border-radius: 50% 50% 0% 50% / 50% 50% 0% 50%;
+    width: 35vw;
+    height: 35vw;
+    // border-radius: 50% 50% 0% 50% / 50% 50% 0% 50%;
+    border-radius: 100%;
     border: 5px solid #8d72e1;
-    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,8 +17,9 @@
         text-align: center;
         overflow: hidden;
         a {
-            font-size: 2.2rem;
+            font-size: 2rem;
         }
+        margin-top: 1rem;
     }
     a {
         color: #8d72e1;
@@ -26,21 +27,27 @@
         font-size: 1.5rem;
     }
 
-    div {
-        margin-bottom: 2%;
-    }
-
     .content {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
-        justify-content: space-evenly;
-        width: 100%;
+        justify-content: center;
+        width: 70%;
         .image img {
-            width: 100%;
+            width: 50%;
             object-fit: cover;
             border-radius: 5px;
-            margin-bottom: 10px;
+            border: 4px solid #000;
+            margin: 10px;
+        }
+
+        .image {
+            width: 100%;
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
         }
 
         .text {
@@ -48,8 +55,8 @@
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
-            width: 30vw;
-            height: 15vw;
+            width: 40vw;
+            height: 10vw;
             .tools {
                 display: flex;
                 flex-direction: column;
@@ -60,29 +67,41 @@
                 }
                 p {
                     margin: 0;
-                    font-size: 2.5rem;
+                    font-size: 2rem;
+                    color: #333;
                 }
                 .tool {
                     width: 100%;
                     font-size: 1.5rem;
+                    color: #333;
                 }
             }
-
-            img {
-                width: 30px;
-                height: 30px;
-                margin-left: 10px;
-            }
-
-            a {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
-            }
+        }
+        a {
+            padding: 0;
         }
     }
+    transform: translateX(7vw);
+}
 
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 5px solid #8d72e1;
+    padding: 40px;
+    height: 100%;
+    width: 35%;
+    position: relative;
+    opacity: 0;
+    img {
+        width: 30px;
+        height: 30px;
+        margin-left: -10px;
+    }
     .button {
         background-color: #fff;
         border: none;
@@ -97,25 +116,195 @@
             color: #fff;
         }
     }
+
+    .link {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        img {
+            margin-left: 10px;
+        }
+    }
+
+    .url-git {
+        .link {
+            margin-bottom: 10px;
+        }
+    }
+
+    .url-project {
+        .link {
+            margin-bottom: 10px;
+        }
+    }
+
+    a {
+        padding: 0;
+    }
+    transition: all 0.3s ease-in-out;
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    &:hover {
+        .card {
+            transform: translateX(-10%);
+        }
+        .footer {
+            opacity: 1;
+            transform: rotate(360deg);
+            transition: all 0.5s ease-in-out;
+        }
+    }
+
+    &:focus {
+        .card {
+            transform: translateX(-10%);
+        }
+        .footer {
+            opacity: 1;
+            transform: rotate(360deg);
+            transition: all 0.5s ease-in-out;
+        }
+    }
 }
 
 @media (max-width: 1650px) {
     .card {
-        width: 40vw;
+        width: 45vw;
         height: 40vw;
+        .content {
+            .image {
+                img {
+                    width: 55%;
+                }
+            }
+            .tools {
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }
+        transform: translateX(10vw);
+    }
+}
+
+@media (max-width: 1400px) {
+    .card {
+        width: 42vw;
+        height: 39vw;
+        .content {
+            .text {
+                .tools {
+                    p {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+        transform: translateX(12vw);
     }
 }
 
 @media (max-width: 1200px) {
     .card {
-        width: 50vw;
-        height: 50vw;
+        width: 55vw;
+        height: 48vw;
+        .content {
+            .image {
+                img {
+                    width: 55%;
+                }
+            }
+            .text {
+                .tools {
+                    p {
+                        font-size: 1.2rem;
+                    }
+                }
+                height: 15vw;
+            }
+        }
+        transform: translateX(20vw);
     }
 }
 
 @media (max-width: 1000px) {
     .card {
         width: 65vw;
-        height: 65vw;
+        height: 53vw;
+        .content {
+            .image {
+                img {
+                    width: 60%;
+                }
+            }
+            .text {
+                .tools {
+                    p {
+                        font-size: 1.4rem;
+                    }
+                }
+                height: 15vw;
+            }
+        }
+        transform: translateX(21vw);
+    }
+}
+
+@media (max-width: 800px) {
+    .card {
+        width: 80vw;
+        height: 68vw;
+        .content {
+            .image {
+                img {
+                    width: 65%;
+                }
+            }
+            .text {
+                .tools {
+                    p {
+                        font-size: 1.6rem;
+                    }
+                }
+                height: 20vw;
+            }
+        }
+        transform: translateX(25vw);
+    }
+
+    .projects {
+        width: 20%;
+    }
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 90vw;
+        height: 80vw;
+        .content {
+            .image {
+                img {
+                    width: 70%;
+                }
+            }
+            .text {
+                .tools {
+                    p {
+                        font-size: 1.8rem;
+                    }
+                }
+                height: 35vw;
+            }
+        }
+        transform: translateX(30vw);
+    }
+
+    .projects {
+        width: 20%;
     }
 }
