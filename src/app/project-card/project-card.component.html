@@ -1,17 +1,32 @@
-<div class="card">
-    <div class="title">{{project.name}}</div>
-    <div class="image">
-        <img [src]="project.image" [alt]="project.name + ' image'">
+<div class="card background--custom">
+    <div class="title">
+        <a [href]="project.urlGit" target="_blank" class="link-title">
+            {{project.name}}
+        </a>
     </div>
-    <div class="tools">
-        <p>Tools</p>
-        <div *ngFor="let tool of project.tools" class="tool">{{tool}}</div>
+    <div class="content">
+        <div class="text">
+            <div class="tools">
+                <p>Tools</p>
+                <ul>
+                    <li *ngFor="let tool of project.tools" class="tool">{{tool}}</li>
+                </ul>
+            </div>
+            <div class="url-git">
+                <a [href]="project.urlGit" target="_blank" class="link">GitHub
+                    <img src="assets/images/github.png" alt="GitHub">
+                </a>
+            </div>
+            <div class="urlProject" *ngIf="project.urlProject != ''">
+                <a [href]="project.urlProject" target="_blank" class="link">Project
+                    <img src="assets/images/link.png" alt="Website">
+                </a>
+
+            </div>
+        </div>
+        <div class="image">
+            <img [src]="project.image" [alt]="project.name + ' image'">
+        </div>
     </div>
-    <div class="url-git">
-        <a [href]="project.urlGit" target="_blank">GitHub</a>
-    </div>
-    <div class="urlProject">
-        <a [href]="project.urlProject" target="_blank">Project</a>
-    </div>
-    <button (click)="goSingleProject()">See this project</button>
+    <button (click)="goSingleProject()" class="button">Learn more</button>
 </div>

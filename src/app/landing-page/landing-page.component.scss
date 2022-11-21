@@ -32,7 +32,20 @@
     .title {
         font-size: 4rem;
         font-weight: 600;
-        color: #8d72e1;
+        background: rgb(141, 114, 225);
+        background: linear-gradient(
+            90deg,
+            rgba(141, 114, 225, 1) 0%,
+            rgba(9, 85, 121, 1) 51%,
+            rgba(0, 212, 255, 1) 100%
+        );
+        background-size: 100%;
+        background-repeat: repeat;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
     }
     #description {
         font-size: 1.5rem;
