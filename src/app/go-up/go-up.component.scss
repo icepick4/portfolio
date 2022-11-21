@@ -1,0 +1,21 @@
+.go-up {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    border-radius: 50%;
+    width: 8vw;
+    height: 8vw;
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .go-up {
+        width: 15vw;
+        height: 15vw;
+    }
+}

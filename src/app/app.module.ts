@@ -9,6 +9,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { SingleProjectCardComponent } from './single-project-card/single-project-card.component';
 import { ButtonComponent } from './button/button.component';
 import { HeaderComponent } from './header/header.component';
+import { GoUpComponent } from './go-up/go-up.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { HeaderComponent } from './header/header.component';
     SingleProjectCardComponent,
     ButtonComponent,
     HeaderComponent,
+    GoUpComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

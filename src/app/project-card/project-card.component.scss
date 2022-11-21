@@ -136,6 +136,14 @@
     .url-project {
         .link {
             margin-bottom: 10px;
+            &::after {
+                width: 80%;
+            }
+        }
+    }
+    .link {
+        &::after {
+            width: 70%;
         }
     }
 
