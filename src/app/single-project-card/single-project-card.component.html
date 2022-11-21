@@ -1,0 +1,20 @@
+<div class="project">
+    <div class="project__title">
+        <h1>{{ project.name }}</h1>
+    </div>
+    <div class="project__image">
+        <img [src]="project.image" alt="Project image">
+    </div>
+    <div class="project__description">
+        <h2>Description</h2>
+        <p>{{ project.description }}</p>
+    </div>
+    <div class="project__purpose">
+        <h2>Purpose</h2>
+        <p>{{ project.purpose }}</p>
+    </div>
+    <div class="project__links">
+        <a [href]="project.urlGit" target="_blank" class="project__link">Github</a>
+        <a [href]="project.urlProject" target="_blank" class="project__link">Project</a>
+    </div>
+</div>

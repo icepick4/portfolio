@@ -1,7 +1,7 @@
 .card {
     margin: 40px;
     width: 35vw;
-    height: 35vw;
+    height: 30vw;
     // border-radius: 50% 50% 0% 50% / 50% 50% 0% 50%;
     border-radius: 100%;
     border: 5px solid #8d72e1;
@@ -34,11 +34,12 @@
         justify-content: center;
         width: 70%;
         .image img {
-            width: 50%;
+            width: 80%;
             object-fit: cover;
             border-radius: 5px;
             border: 4px solid #000;
             margin: 10px;
+            margin-bottom: 50px;
         }
 
         .image {
@@ -55,7 +56,7 @@
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
-            width: 40vw;
+            // width: 40vw;
             height: 10vw;
             .tools {
                 display: flex;
@@ -81,7 +82,7 @@
             padding: 0;
         }
     }
-    transform: translateX(7vw);
+    transform: translateX(5vw);
 }
 
 .footer {
@@ -92,7 +93,7 @@
     background-color: #fff;
     border-radius: 50%;
     border: 5px solid #8d72e1;
-    padding: 40px;
+    padding: 25px;
     height: 100%;
     width: 35%;
     position: relative;
@@ -183,11 +184,11 @@
 @media (max-width: 1650px) {
     .card {
         width: 45vw;
-        height: 40vw;
+        height: 33vw;
         .content {
             .image {
                 img {
-                    width: 55%;
+                    width: 70%;
                 }
             }
             .tools {
@@ -196,14 +197,18 @@
                 }
             }
         }
-        transform: translateX(10vw);
+        transform: translateX(8vw);
+    }
+
+    .footer {
+        width: 33%;
     }
 }
 
 @media (max-width: 1400px) {
     .card {
         width: 42vw;
-        height: 39vw;
+        height: 33vw;
         .content {
             .text {
                 .tools {
@@ -213,7 +218,19 @@
                 }
             }
         }
-        transform: translateX(12vw);
+        transform: translateX(10vw);
+    }
+
+    .project {
+        &:hover {
+            .card {
+                transform: translateX(-9%);
+            }
+        }
+    }
+
+    .footer {
+        width: 31%;
     }
 }
 
@@ -224,7 +241,7 @@
         .content {
             .image {
                 img {
-                    width: 55%;
+                    width: 70%;
                 }
             }
             .text {
@@ -236,7 +253,19 @@
                 height: 15vw;
             }
         }
-        transform: translateX(20vw);
+        transform: translateX(14vw);
+    }
+
+    .project {
+        &:hover {
+            .card {
+                transform: translateX(-8%);
+            }
+        }
+    }
+
+    .footer {
+        width: 28%;
     }
 }
 
@@ -247,7 +276,7 @@
         .content {
             .image {
                 img {
-                    width: 60%;
+                    width: 75%;
                 }
             }
             .text {
@@ -259,7 +288,40 @@
                 height: 15vw;
             }
         }
-        transform: translateX(21vw);
+        transform: translateX(14vw);
+    }
+
+    .project {
+        &:hover {
+            .card {
+                transform: translateX(-7%);
+            }
+        }
+    }
+
+    .footer {
+        width: 25%;
+    }
+}
+
+@media (max-width: 900px) {
+    .footer {
+        opacity: 1;
+        transform: rotate(360deg);
+    }
+
+    .card {
+        transform: translateX(0);
+    }
+
+    .project {
+        &:hover {
+            .card {
+                transform: translateX(0);
+            }
+        }
+        flex-direction: column;
+        margin-bottom: 100px;
     }
 }
 
@@ -270,7 +332,7 @@
         .content {
             .image {
                 img {
-                    width: 65%;
+                    width: 75%;
                 }
             }
             .text {
@@ -282,11 +344,10 @@
                 height: 20vw;
             }
         }
-        transform: translateX(25vw);
     }
 
-    .projects {
-        width: 20%;
+    .footer {
+        width: 35%;
     }
 }
 
@@ -309,10 +370,9 @@
                 height: 35vw;
             }
         }
-        transform: translateX(30vw);
     }
 
-    .projects {
-        width: 20%;
+    .footer {
+        width: 35%;
     }
 }

@@ -1,0 +1,69 @@
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__title {
+        font-size: 4rem;
+        font-weight: 600;
+        background: rgb(141, 114, 225);
+        background: linear-gradient(
+            90deg,
+            #5435b3 0%,
+            rgba(9, 85, 121, 1) 51%,
+            rgba(0, 212, 255, 1) 100%
+        );
+        background-size: 100%;
+        background-repeat: repeat;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+    }
+
+    &__description {
+        font-size: 2rem;
+        font-weight: 600;
+        color: #fff;
+        width: 50%;
+        text-align: center;
+        margin-top: 3rem;
+    }
+
+    &__image {
+        object-fit: cover;
+        border-radius: 5px;
+        border: 4px solid #000;
+        margin: 10px;
+        margin-bottom: 50px;
+        transform: scale(1.3);
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        ul {
+            padding: 0;
+        }
+        p {
+            margin: 0;
+            font-size: 2rem;
+            color: #fff;
+        }
+    }
+
+    h2 {
+        color: #5435b3;
+    }
+
+    &__purpose {
+        font-size: 2rem;
+        font-weight: 600;
+        color: #fff;
+        width: 50%;
+        text-align: center;
+        margin-top: 3rem;
+    }
+}
