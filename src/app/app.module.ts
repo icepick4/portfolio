@@ -11,6 +11,7 @@ import { ButtonComponent } from './button/button.component';
 import { HeaderComponent } from './header/header.component';
 import { GoUpComponent } from './go-up/go-up.component';
 import { ContactComponent } from './contact/contact.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { ContactComponent } from './contact/contact.component';
     HeaderComponent,
     GoUpComponent,
     ContactComponent,
+    AboutComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

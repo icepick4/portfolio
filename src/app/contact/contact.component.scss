@@ -1,3 +1,6 @@
+body {
+    overflow: hidden;
+}
 .content {
     display: flex;
     flex-direction: column;
@@ -11,8 +14,9 @@
     a {
         color: #8d72e1;
         text-decoration: none;
-        font-size: 1.5rem;
+        font-size: 1vw;
         width: 100%;
+        cursor: pointer;
     }
     .link-content {
         display: flex;
@@ -22,7 +26,7 @@
         padding: 10px;
         img {
             margin-right: 20px;
-            width: 5rem;
+            width: 5vw;
             filter: brightness(0) invert(1);
         }
         &:hover {
@@ -32,6 +36,7 @@
             p {
                 color: #fff;
             }
+            transition: background 0.2s ease-in-out;
         }
     }
     .content-left {
@@ -40,16 +45,81 @@
         flex-direction: column;
         justify-content: space-between;
     }
+    animation: appear 1s ease-in-out;
 }
 
-@keyframes hover-anim {
+@keyframes appear {
     0% {
-        transform: translateX(0);
-    }
-    50% {
-        transform: translateX(10px);
+        opacity: 0;
+        // transform: translateY(50px);
     }
     100% {
-        transform: translateX(0);
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 1800px) {
+    .content {
+        a {
+            font-size: 1.5vw;
+        }
+        .link-content {
+            img {
+                width: 7vw;
+            }
+        }
+    }
+}
+
+@media (max-width: 1500px) {
+    .content {
+        a {
+            font-size: 2vw;
+        }
+        .link-content {
+            img {
+                width: 10vw;
+            }
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    .content {
+        a {
+            font-size: 2.5vw;
+        }
+        .link-content {
+            img {
+                width: 13vw;
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .content {
+        a {
+            font-size: 3.2vw;
+        }
+        .link-content {
+            img {
+                width: 17vw;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .content {
+        a {
+            font-size: 4vw;
+        }
+        .link-content {
+            img {
+                width: 20vw;
+            }
+        }
     }
 }
