@@ -16,7 +16,12 @@ export class SingleProjectCardComponent implements OnInit {
     ) {}
 
     ngOnInit(): void {
+        this.scrollToTop();
         const id = +this.route.snapshot.params['id'];
         this.project = this.portfolioService.getProjectById(id);
+    }
+
+    scrollToTop() {
+        window.scrollTo(0, 0);
     }
 }

@@ -46,7 +46,7 @@ path {
     transform-origin: 50% 0%;
 }
 .background--custom {
-    background-color: #ffffff;
+    background-color: #71afe5;
     position: absolute;
     width: 100vw;
     height: 100vh;
@@ -56,18 +56,18 @@ path {
 }
 @keyframes path0 {
     0% {
-        transform: rotate(-50deg);
+        transform: rotate(-75deg);
     }
     100% {
-        transform: rotate(50deg);
+        transform: rotate(75deg);
     }
 }
 @keyframes path1 {
     0% {
-        transform: rotate(20deg);
+        transform: rotate(35deg);
     }
     100% {
-        transform: rotate(-20deg);
+        transform: rotate(-35deg);
     }
 }
 @keyframes path2 {
@@ -80,9 +80,9 @@ path {
 }
 @keyframes path3 {
     0% {
-        transform: rotate(50deg);
+        transform: rotate(75deg);
     }
     100% {
-        transform: rotate(-50deg);
+        transform: rotate(-75deg);
     }
 }
