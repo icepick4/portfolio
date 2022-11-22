@@ -1,6 +1,6 @@
 .card {
     margin: 40px;
-    width: 35vw;
+    width: 37vw;
     height: 30vw;
     // border-radius: 50% 50% 0% 50% / 50% 50% 0% 50%;
     border-radius: 100%;
@@ -56,7 +56,6 @@
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
-            // width: 40vw;
             height: 10vw;
             .tools {
                 display: flex;
@@ -95,7 +94,7 @@
     border: 5px solid #8d72e1;
     padding: 25px;
     height: 100%;
-    width: 35%;
+    width: 20%;
     position: relative;
     opacity: 0;
     img {
@@ -194,30 +193,26 @@
     }
 
     .footer {
-        width: 33%;
+        width: 28%;
     }
 }
 
 @media (max-width: 1400px) {
     .card {
         width: 42vw;
-        height: 33vw;
+        height: 36vw;
         .content {
             .text {
                 .tools {
                     p {
-                        font-size: 1.5rem;
+                        font-size: 1.4rem;
                     }
                 }
             }
         }
     }
     .move-left {
-        transform: translateX(10vw);
-    }
-
-    .footer {
-        width: 31%;
+        transform: translateX(-7%);
     }
 }
 
@@ -242,11 +237,7 @@
         }
     }
     .move-left {
-        transform: translateX(14vw);
-    }
-
-    .footer {
-        width: 28%;
+        transform: translateX(-8%);
     }
 }
 
@@ -271,11 +262,7 @@
         }
     }
     .move-left {
-        transform: translateX(14vw);
-    }
-
-    .footer {
-        width: 25%;
+        transform: translateX(-9%);
     }
 }
 
@@ -286,6 +273,10 @@
     }
 
     .move-left {
+        transform: translateX(0);
+    }
+
+    .move-right {
         transform: translateX(0);
     }
 
@@ -316,6 +307,14 @@
         }
     }
 
+    .move-left {
+        transform: translateX(0);
+    }
+
+    .move-right {
+        transform: translateX(0);
+    }
+
     .footer {
         width: 35%;
     }
@@ -340,6 +339,14 @@
                 height: 35vw;
             }
         }
+    }
+
+    .move-left {
+        transform: translateX(0);
+    }
+
+    .move-right {
+        transform: translateX(0);
     }
 
     .footer {

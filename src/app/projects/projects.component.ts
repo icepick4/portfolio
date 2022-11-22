@@ -22,16 +22,13 @@ export class ProjectsComponent implements OnInit {
             (document.documentElement.scrollTop + document.body.scrollTop) /
             (document.documentElement.scrollHeight -
                 document.documentElement.clientHeight);
-        console.log(scrollPercent);
         let scrollPercentRounded = Math.round(scrollPercent * 100);
         let nbProjects = this.projects.length;
         let projectVisible = Math.round(
-            (scrollPercentRounded * nbProjects * 0.9) / 100
+            (scrollPercentRounded * nbProjects * 0.8) / 100
         );
-        console.log(projectVisible);
+        //set visible to true for the project on the scroll
         this.projects[projectVisible].visible = true;
-        this.projects[projectVisible + 1].visible = true;
-        this.projects[projectVisible - 1].visible = true;
 
         //disable others
         for (let i = 0; i < nbProjects; i++) {

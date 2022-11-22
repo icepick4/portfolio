@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ContactComponent } from './contact/contact.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { SingleProjectCardComponent } from './single-project-card/single-project-card.component';
@@ -18,6 +19,10 @@ const routes: Routes = [
         path: 'projects/:id',
         component: SingleProjectCardComponent,
         data: { showAll: true },
+    },
+    {
+        path: 'contact',
+        component: ContactComponent,
     },
 ];
 
