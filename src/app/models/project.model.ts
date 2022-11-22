@@ -7,6 +7,7 @@ export class Project {
     image: string;
     urlGit: string;
     urlProject: string;
+    visible: boolean;
 
     constructor(
         id: number,
@@ -26,5 +27,9 @@ export class Project {
         this.image = image;
         this.urlGit = urlGit;
         this.urlProject = urlProject;
+        this.visible = false;
+        if (id === 1) {
+            this.visible = true;
+        }
     }
 }

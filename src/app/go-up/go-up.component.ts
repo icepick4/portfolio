@@ -18,6 +18,6 @@ export class GoUpComponent implements OnInit {
             } else {
                 window.clearInterval(scrollToTop);
             }
-        }, 16);
+        }, 3);
     }
 }

@@ -1,6 +1,6 @@
 <div class="project">
-    <div class="card">
-        <div class="title">
+    <div class="card" [ngClass]="project.visible == true ? 'move-left' : 'move-right'">
+        <div class=" title">
             <a routerLink="/projects/{{project.id}}">
                 {{project.name}}
             </a>
@@ -22,7 +22,7 @@
             </a>
         </div>
     </div>
-    <div class="footer">
+    <div class="footer" [ngClass]="project.visible == true ? 'rotate' : ''">
         <div class="url-git">
             <a [href]="project.urlGit" target="_blank" class="link">GitHub
                 <img src="assets/images/github.png" alt="GitHub">

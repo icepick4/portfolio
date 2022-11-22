@@ -82,7 +82,7 @@
             padding: 0;
         }
     }
-    transform: translateX(5vw);
+    // transform: translateX(5vw);
 }
 
 .footer {
@@ -154,31 +154,21 @@
     transition: all 0.3s ease-in-out;
 }
 
+.rotate {
+    transform: rotate(360deg);
+    transition: all 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.move-right {
+    transform: translateX(5vw);
+    transition: all 0.5s ease-in-out;
+}
+
 .project {
     display: flex;
     flex-direction: row;
     align-items: center;
-    &:hover {
-        .card {
-            transform: translateX(-10%);
-        }
-        .footer {
-            opacity: 1;
-            transform: rotate(360deg);
-            transition: all 0.5s ease-in-out;
-        }
-    }
-
-    &:focus {
-        .card {
-            transform: translateX(-10%);
-        }
-        .footer {
-            opacity: 1;
-            transform: rotate(360deg);
-            transition: all 0.5s ease-in-out;
-        }
-    }
 }
 
 @media (max-width: 1650px) {
@@ -197,7 +187,10 @@
                 }
             }
         }
-        transform: translateX(8vw);
+    }
+
+    .move-left {
+        transform: translateX(-5%);
     }
 
     .footer {
@@ -218,15 +211,9 @@
                 }
             }
         }
-        transform: translateX(10vw);
     }
-
-    .project {
-        &:hover {
-            .card {
-                transform: translateX(-9%);
-            }
-        }
+    .move-left {
+        transform: translateX(10vw);
     }
 
     .footer {
@@ -253,15 +240,9 @@
                 height: 15vw;
             }
         }
-        transform: translateX(14vw);
     }
-
-    .project {
-        &:hover {
-            .card {
-                transform: translateX(-8%);
-            }
-        }
+    .move-left {
+        transform: translateX(14vw);
     }
 
     .footer {
@@ -288,15 +269,9 @@
                 height: 15vw;
             }
         }
-        transform: translateX(14vw);
     }
-
-    .project {
-        &:hover {
-            .card {
-                transform: translateX(-7%);
-            }
-        }
+    .move-left {
+        transform: translateX(14vw);
     }
 
     .footer {
@@ -310,16 +285,11 @@
         transform: rotate(360deg);
     }
 
-    .card {
+    .move-left {
         transform: translateX(0);
     }
 
     .project {
-        &:hover {
-            .card {
-                transform: translateX(0);
-            }
-        }
         flex-direction: column;
         margin-bottom: 100px;
     }
