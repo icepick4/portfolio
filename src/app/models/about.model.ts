@@ -2,7 +2,8 @@ export class About {
     constructor(
         public title: string,
         public image: string,
-        public type: Type
+        public type: Type,
+        public animation: boolean = false
     ) {}
 }
 
