@@ -16,7 +16,10 @@ export class AppComponent {
             } else {
                 this.displayHeader = false;
             }
-            if (router.url.includes('projects')) {
+            if (
+                router.url.includes('projects') ||
+                router.url.includes('about')
+            ) {
                 this.displayCustomBackground = false;
             } else {
                 this.displayCustomBackground = true;

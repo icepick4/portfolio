@@ -4,7 +4,7 @@ import { Project } from '../models/project.model';
 @Injectable({
     providedIn: 'root',
 })
-export class PortfolioService {
+export class ProjectService {
     projects: Project[] = [
         new Project(
             1,

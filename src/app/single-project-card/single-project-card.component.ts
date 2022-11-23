@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Project } from '../models/project.model';
-import { PortfolioService } from '../services/portfolio.service';
+import { ProjectService } from '../services/project.service';
 
 @Component({
     selector: 'app-single-project-card',
@@ -11,14 +11,14 @@ import { PortfolioService } from '../services/portfolio.service';
 export class SingleProjectCardComponent implements OnInit {
     project!: Project;
     constructor(
-        private portfolioService: PortfolioService,
+        private projectService: ProjectService,
         private route: ActivatedRoute
     ) {}
 
     ngOnInit(): void {
         this.scrollToTop();
         const id = +this.route.snapshot.params['id'];
-        this.project = this.portfolioService.getProjectById(id);
+        this.project = this.projectService.getProjectById(id);
     }
 
     scrollToTop() {

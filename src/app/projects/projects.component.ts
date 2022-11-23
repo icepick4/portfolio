@@ -1,6 +1,6 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { Project } from '../models/project.model';
-import { PortfolioService } from '../services/portfolio.service';
+import { ProjectService } from '../services/project.service';
 
 @Component({
     selector: 'app-projects',
@@ -9,10 +9,10 @@ import { PortfolioService } from '../services/portfolio.service';
 })
 export class ProjectsComponent implements OnInit {
     projects!: Project[];
-    constructor(private portfolioService: PortfolioService) {}
+    constructor(private projectService: ProjectService) {}
 
     ngOnInit(): void {
-        this.projects = this.portfolioService.getProjects();
+        this.projects = this.projectService.getProjects();
     }
 
     @HostListener('window:scroll', ['$event'])
