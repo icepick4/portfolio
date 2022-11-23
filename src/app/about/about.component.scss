@@ -3,13 +3,85 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 1rem;
+    }
+    justify-content: center;
     gap: 1rem;
 }
 
 .about {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    gap: 1rem;
+    width: 38%;
+    img {
+        height: 3vw;
+    }
+    @for $i from 1 through 21 {
+        &:nth-child(#{$i}) {
+            h3 {
+                animation: appearFromLeft #{($i / 10) + 0.5}s ease-in-out;
+            }
+            img {
+                animation: appearFromRight #{($i / 10) + 0.5}s ease-in-out;
+            }
+        }
+    }
+}
+
+@media (max-width: 1150px) {
+    .about {
+        width: 50%;
+        img {
+            height: 4vw;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .about {
+        width: 70%;
+        img {
+            height: 5vw;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .about {
+        flex-direction: column;
+        width: 100%;
+        img {
+            height: 7vw;
+        }
+    }
+}
+
+@keyframes appearFromLeft {
+    from {
+        transform: translateX(-1000px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes appearFromRight {
+    from {
+        transform: translateX(1000px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@mixin animate($animation, $duration) {
+    animation: $animation $duration;
 }

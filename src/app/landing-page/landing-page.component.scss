@@ -7,7 +7,7 @@
     &:hover {
         filter: grayscale(0%);
     }
-    animation: appearAnimScale 1s ease-in-out;
+    animation: appearAnimScale 1.25s ease-in-out;
 }
 
 .content {
@@ -22,15 +22,6 @@
         font-size: 4rem;
         font-weight: 600;
         color: #fff;
-        &:nth-child(1) {
-            animation: appearAnimLeft 1s ease-in-out;
-        }
-        &:nth-child(2) {
-            animation: appearAnimBottom 1s ease-in-out;
-        }
-        &:nth-child(3) {
-            animation: appearAnimRight 1s ease-in-out;
-        }
     }
 }
 
@@ -56,7 +47,6 @@
         -webkit-text-fill-color: transparent;
         -moz-background-clip: text;
         -moz-text-fill-color: transparent;
-        animation: appearAnimTop 1.1s ease-in-out;
     }
     #description {
         font-size: 1.5rem;
@@ -65,7 +55,6 @@
         width: 20%;
         text-align: center;
         margin-top: 3rem;
-        animation: appearOpacity 2s ease-in-out;
     }
 }
 
@@ -125,50 +114,5 @@
     }
     100% {
         transform: scale(1);
-    }
-}
-
-@keyframes appearAnimLeft {
-    0% {
-        transform: translateX(-1000px);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-
-@keyframes appearAnimTop {
-    0% {
-        transform: translateY(-1000px);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-
-@keyframes appearAnimRight {
-    0% {
-        transform: translateX(1000px);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-
-@keyframes appearAnimBottom {
-    0% {
-        transform: translateY(1000px);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-
-@keyframes appearOpacity {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
     }
 }

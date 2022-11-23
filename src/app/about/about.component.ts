@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { About } from '../models/about.model';
 import { AboutService } from '../services/about.service';
 
@@ -29,5 +29,10 @@ export class AboutComponent implements OnInit {
 
     getAllHobbies() {
         this.hobbies = this.aboutService.getAllHobbies();
+    }
+
+    @HostListener('window:scroll', ['$event'])
+    elementsVisible($event: any) {
+        console.log($event);
     }
 }
