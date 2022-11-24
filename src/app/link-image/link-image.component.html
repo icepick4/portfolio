@@ -1,0 +1,10 @@
+<div *ngIf="router">
+    <a [routerLink]="href" class="link">{{alt}}
+        <img [src]="image" [alt]="alt" id="logo">
+    </a>
+</div>
+<div *ngIf="!router">
+    <a [href]="href" target="_blank" class="link">{{alt}}
+        <img [src]="image" [alt]="alt" id="logo">
+    </a>
+</div>

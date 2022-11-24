@@ -1,5 +1,14 @@
 <div class="project">
-    <p>Still in development...</p>
+    <div class="project__links">
+        <app-link-image [href]="project.urlGit" [image]="'assets/images/github.png'" [alt]="'View the code on Github'">
+        </app-link-image>
+        <div *ngIf="project.urlProject != ''">
+            <app-link-image [href]="project.urlProject" [image]="'assets/images/link.png'" [alt]="'View the project'">
+            </app-link-image>
+        </div>
+        <app-link-image href="/projects" [image]="'assets/images/more.png'" [alt]="'Go back'" [router]="true">
+        </app-link-image>
+    </div>
     <div class="project__title">
         <h1>{{ project.name }}</h1>
     </div>
@@ -14,8 +23,12 @@
         <h2>Purpose</h2>
         <p>{{ project.purpose }}</p>
     </div>
-    <div class="project__links">
-        <a [href]="project.urlGit" target="_blank" class="project__link">Github</a>
-        <a [href]="project.urlProject" target="_blank" class="project__link">Project</a>
+    <div class="project__tools">
+        <h1>Tools</h1>
+        <div *ngFor="let tool of project.tools" class="tool">
+            <h2>{{tool}}</h2>
+            <img [src]="getImageTool(tool)" alt="Tool image">
+        </div>
     </div>
 </div>
+<app-go-up></app-go-up>

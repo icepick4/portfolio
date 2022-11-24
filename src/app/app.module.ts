@@ -12,6 +12,7 @@ import { HeaderComponent } from './header/header.component';
 import { GoUpComponent } from './go-up/go-up.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
+import { LinkImageComponent } from './link-image/link-image.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { AboutComponent } from './about/about.component';
     GoUpComponent,
     ContactComponent,
     AboutComponent,
+    LinkImageComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

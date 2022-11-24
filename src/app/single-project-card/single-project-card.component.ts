@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { About } from '../models/about.model';
 import { Project } from '../models/project.model';
+import { AboutService } from '../services/about.service';
 import { ProjectService } from '../services/project.service';
 
 @Component({
@@ -10,8 +12,10 @@ import { ProjectService } from '../services/project.service';
 })
 export class SingleProjectCardComponent implements OnInit {
     project!: Project;
+    tools!: About[];
     constructor(
         private projectService: ProjectService,
+        private aboutService: AboutService,
         private route: ActivatedRoute
     ) {}
 
@@ -19,9 +23,15 @@ export class SingleProjectCardComponent implements OnInit {
         this.scrollToTop();
         const id = +this.route.snapshot.params['id'];
         this.project = this.projectService.getProjectById(id);
+        this.tools = [];
+        console.log(this.tools);
     }
 
     scrollToTop() {
         window.scrollTo(0, 0);
+    }
+
+    getImageTool(tool: string) {
+        return this.aboutService.getImageTool(tool);
     }
 }

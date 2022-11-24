@@ -134,6 +134,22 @@ export class AboutService {
         return this.infos.filter((info) => info.type === Type.Tool);
     }
 
+    getImageTool(title: string) {
+        for (const info of this.infos) {
+            if (info.title === title) {
+                return info.image;
+            }
+        }
+        return `https://img.shields.io/badge/${title}-${this.getColor()}?style=for-the-badge&logo=data:image/webp;base64,UklGRs4AAABXRUJQVlA4TMEAAAAvn8AnEE+gFpIkaDGefP3DpTiDMziAU1ETSQpDlUUw6EAsNmOhJAAaBksBNP1TrMnXyzD/AYCwG+Uz0UlBrTMWttv9A6vIVutgAQuxgAUsYAELsRAL0Xv6br/IdCai/xMgP5ft+hWgsXNwHhxsNDpL3majnp0Hg8m6d61xcFK5DBidyY1BZfEzBpNC5WTxMzqTcnAFMAaTcnZjsOQZnUm5dKOz2hmDSblZKTeXMqMzKe8vZcZgUt5fz/KgfGQ9WxUBAA==`;
+    }
+
+    getColor() {
+        //get hexa color
+        const hexa = Math.floor(Math.random() * 16777215).toString(16);
+        //add 0 if hexa is less than 6
+        return hexa.length === 6 ? hexa : '0' + hexa;
+    }
+
     getAllHobbies() {
         return this.infos.filter((info) => info.type === Type.Hobby);
     }

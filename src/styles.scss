@@ -1,5 +1,9 @@
 body {
-    background-color: #df7e66;
+    background-image: url(assets/images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     height: 100vh;
     margin: 0;
     padding: 0;
@@ -20,8 +24,8 @@ a {
     color: #5435b3;
     display: block;
     position: relative;
-    padding: 0.2em 0;
     overflow: hidden;
+    margin-bottom: 10px;
     &.link {
         &::after {
             content: "";
@@ -29,11 +33,12 @@ a {
             bottom: 0;
             left: 0;
             width: 100%;
-            height: 3px;
+            height: 2px;
             background-color: #5435b3;
             opacity: 0;
             transition: opacity 400ms, transform 400ms;
             transform: translate3d(-105%, 0, 0);
+            transform: translateY(100%);
         }
 
         &:hover::after {
