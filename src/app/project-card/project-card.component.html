@@ -25,18 +25,18 @@
     <div class="footer" [ngClass]="project.visible == true ? 'rotate' : ''">
         <div class="url-git">
             <a [href]="project.urlGit" target="_blank" class="link">GitHub
-                <img src="assets/images/github.png" alt="GitHub">
+                <img src="assets/images/github.png" alt="GitHub" id="logo">
             </a>
         </div>
         <div class="url-project" *ngIf="project.urlProject != ''">
             <a [href]="project.urlProject" target="_blank" class="link">Project
-                <img src="assets/images/link.png" alt="Website">
+                <img src="assets/images/link.png" alt="Website" id="logo">
             </a>
 
         </div>
         <div class="url-more">
             <a routerLink="/projects/{{project.id}}" class="link">Learn more
-                <img src="assets/images/more.png" alt="More">
+                <img src="assets/images/more.png" alt="More" id="logo">
             </a>
         </div>
     </div>
