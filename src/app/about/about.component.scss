@@ -13,6 +13,7 @@
     }
     justify-content: center;
     gap: 1rem;
+    margin-bottom: 3rem;
 }
 
 .about {
@@ -24,35 +25,33 @@
     img {
         height: 3vw;
     }
-    // @for $i from 1 through 21 {
-    //     &:nth-child(#{$i}) {
-    //         h3 {
-    //             animation: appearFromLeft #{($i / 10) + 0.5}s ease-in-out;
-    //         }
-    //         img {
-    //             animation: appearFromRight #{($i / 10) + 0.5}s ease-in-out;
-    //         }
-    //     }
-    // }
-    // h3 {
-    //     transform: translateX(-1000px);
-    // }
-    // img {
-    //     transform: translateX(1000px);
-    // }
 }
 
 .animate {
-    @for $i from 1 through 21 {
+    @for $i from 1 through 24 {
         &:nth-child(#{$i}) {
             h3 {
-                animation: appearFromLeft #{($i / 15) + 0.5}s ease-in-out;
+                animation: appearFromLeft #{($i / 20) + 0.4}s ease-in-out;
             }
             img {
-                animation: appearFromRight #{($i / 15) + 0.5}s ease-in-out;
+                animation: appearFromRight #{($i / 20) + 0.4}s ease-in-out;
             }
         }
     }
+}
+
+#tools-title {
+    opacity: 0;
+    transition: opacity 1.3s ease-in-out;
+}
+
+#hobbies-title {
+    opacity: 0;
+    transition: opacity 1.3s ease-in-out;
+}
+
+#languages-title {
+    animation: appearOpacity 1.3s ease-in-out;
 }
 
 .disabled {
@@ -106,5 +105,14 @@
     to {
         opacity: 1;
         transform: translateX(0px);
+    }
+}
+
+@keyframes appearOpacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }

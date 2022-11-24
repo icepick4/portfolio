@@ -12,6 +12,8 @@ export class AboutComponent implements OnInit {
     hobbies!: About[];
     tools!: About[];
     abouts!: About[];
+    toolsTitle!: HTMLElement;
+    hobbiesTitle!: HTMLElement;
     constructor(private aboutService: AboutService) {}
 
     ngOnInit(): void {
@@ -20,6 +22,9 @@ export class AboutComponent implements OnInit {
         this.getAllHobbies();
         this.abouts = this.languages.concat(this.tools, this.hobbies);
         this.elementsVisible();
+        this.toolsTitle = document.getElementById('tools-title')!;
+        this.hobbiesTitle = document.getElementById('hobbies-title')!;
+        console.log(this.hobbiesTitle);
     }
 
     getAllLanguages() {
@@ -36,21 +41,27 @@ export class AboutComponent implements OnInit {
 
     @HostListener('window:scroll', ['$event'])
     elementsVisible() {
-        let scrollPercent =
-            (document.documentElement.scrollTop + document.body.scrollTop) /
-            (document.documentElement.scrollHeight -
-                document.documentElement.clientHeight);
-        let scrollPercentRounded = Math.round(scrollPercent * 100);
-        //check if scrollPercentRounded is NaN
-        if (!scrollPercentRounded) {
-            scrollPercentRounded = 10;
+        const nbAbouts = this.abouts.length;
+        // detect purcentage of scroll (remove header size)
+        let scroll =
+            (window.scrollY /
+                (document.body.scrollHeight - window.innerHeight)) *
+            100;
+        scroll = Math.round(scroll);
+        let visible = Math.round((scroll * nbAbouts) / 100);
+        if (!visible) {
+            visible = 2;
         }
-        let nbAbouts = this.abouts.length;
-        let aboutVisible = Math.round((scrollPercentRounded * nbAbouts) / 100);
-        //set to true animation for abouts visible
-        for (let i = 0; i < aboutVisible + 8; i++) {
+        for (let i = 0; i < visible + 6 - visible * 0.25; i++) {
             if (i < nbAbouts) {
                 this.abouts[i].animation = true;
+                if (i >= this.languages.length - 1) {
+                    this.toolsTitle.style.opacity = '1';
+                }
+                if (i >= this.languages.length + this.tools.length - 1) {
+                    this.hobbiesTitle.style.opacity = '1';
+                    console.log('done hobbies');
+                }
             }
         }
     }
