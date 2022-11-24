@@ -1,26 +1,15 @@
 body {
-    background-color: #df7e66;
+    // background-color: #df7e66;
     height: 100vh;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    //background gradient}
 }
 
 @font-face {
     font-family: "Monocraft";
     src: url("assets/fonts/Monocraft.otf");
-}
-
-::-webkit-scrollbar {
-    width: 15px;
-    overflow-y: scroll;
-    background: #fff;
-    box-shadow: inset 0 0 3px #707070;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #707070;
-    border-radius: 10px;
 }
 
 * {
@@ -58,6 +47,7 @@ a {
 path {
     transform-origin: 50% 0%;
 }
+
 .background--custom {
     background-color: #71afe5;
     position: absolute;
@@ -97,5 +87,20 @@ path {
     }
     100% {
         transform: rotate(-75deg);
+    }
+}
+
+//css for non mobile devices
+@media only screen and (min-width: 1000px) {
+    ::-webkit-scrollbar {
+        width: 15px;
+        overflow-y: scroll;
+        background: #fff;
+        box-shadow: inset 0 0 3px #707070;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #707070;
+        border-radius: 10px;
     }
 }

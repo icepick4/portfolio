@@ -8,7 +8,8 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
     displayHeader: boolean = false;
-    displayCustomBackground: boolean = true;
+    displayCustomBackground!: boolean;
+    mobile!: boolean;
     constructor(private router: Router) {
         router.events.subscribe((val) => {
             if (router.url != '/') {
@@ -21,9 +22,19 @@ export class AppComponent {
                 router.url.includes('about')
             ) {
                 this.displayCustomBackground = false;
-            } else {
+            } else if (!this.mobile) {
                 this.displayCustomBackground = true;
             }
         });
+    }
+
+    ngOnInit() {
+        if (
+            /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+                navigator.userAgent
+            )
+        ) {
+            this.mobile = true;
+        }
     }
 }

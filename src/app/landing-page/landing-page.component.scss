@@ -91,6 +91,11 @@
         height: auto;
     }
 
+    #photo {
+        width: 10rem;
+        height: 10rem;
+    }
+
     .background--custom {
         background-color: #ffffff;
         position: absolute;
@@ -104,6 +109,7 @@
     .header {
         #description {
             width: 70%;
+            font-size: 1.1rem;
         }
     }
 }

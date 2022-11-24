@@ -19,6 +19,13 @@
 
 @media (max-width: 1000px) {
     .go-up {
+        width: 10vw;
+        height: 10vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .go-up {
         width: 15vw;
         height: 15vw;
     }
