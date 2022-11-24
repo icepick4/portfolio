@@ -4,7 +4,7 @@
     height: 30vw;
     border-radius: 30px;
     border: 5px solid transparent;
-    border-image: url("/assets/images/border2.png") 100 round;
+    border-image: url("/assets/images/border.png") 100 round;
     border-image-width: 20px;
     border-image-outset: 10px;
     display: flex;
@@ -15,7 +15,7 @@
     background-color: #fff;
     .title {
         font-weight: 600;
-        width: 100%;
+        width: 98%;
         text-align: center;
         overflow: hidden;
         a {
@@ -91,7 +91,7 @@
     background-color: #fff;
     border-radius: 5px;
     border: 5px solid transparent;
-    border-image: url("/assets/images/border2.png") 100 round;
+    border-image: url("/assets/images/border.png") 100 round;
     border-image-width: 10px;
     border-image-outset: 5px;
     padding: 25px;
