@@ -70,6 +70,11 @@ export class AboutService {
                 Type.Tool
             ),
             new About(
+                'Netbeans',
+                'https://img.shields.io/badge/NetBeans_IDE-5AA354?style=for-the-badge&logo=apache-netbeans-ide&logoColor=white',
+                Type.Tool
+            ),
+            new About(
                 'Git',
                 'https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white',
                 Type.Tool

@@ -23,6 +23,11 @@ export class ProjectsComponent implements OnInit {
             (document.documentElement.scrollHeight -
                 document.documentElement.clientHeight);
         let scrollPercentRounded = Math.round(scrollPercent * 100);
+        if (scrollPercentRounded >= 15) {
+            const goUp = document.getElementById('go-up')!;
+            goUp.style.visibility = 'visible';
+            goUp.style.opacity = '1';
+        }
         let nbProjects = this.projects.length;
         let projectVisible = Math.round(
             (scrollPercentRounded * nbProjects * 0.8) / 100

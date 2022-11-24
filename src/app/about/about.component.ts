@@ -48,6 +48,11 @@ export class AboutComponent implements OnInit {
                 (document.body.scrollHeight - window.innerHeight)) *
             100;
         scroll = Math.round(scroll);
+        if (scroll >= 20) {
+            const goUp = document.getElementById('go-up')!;
+            goUp.style.visibility = 'visible';
+            goUp.style.opacity = '1';
+        }
         let visible = Math.round((scroll * nbAbouts) / 100);
         if (!visible) {
             visible = 2;
@@ -60,7 +65,6 @@ export class AboutComponent implements OnInit {
                 }
                 if (i >= this.languages.length + this.tools.length - 1) {
                     this.hobbiesTitle.style.opacity = '1';
-                    console.log('done hobbies');
                 }
             }
         }

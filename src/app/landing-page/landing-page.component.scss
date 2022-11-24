@@ -7,7 +7,7 @@
     &:hover {
         filter: grayscale(0%);
     }
-    animation: appearAnimScale 1.25s ease-in-out;
+    animation: appearAnimScale 1.5s ease-in-out;
 }
 
 .content {
@@ -110,7 +110,7 @@
 
 @keyframes appearAnimScale {
     0% {
-        transform: scale(0);
+        transform: scale(0.00000001);
     }
     100% {
         transform: scale(1);

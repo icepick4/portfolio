@@ -7,3 +7,9 @@
 .background--custom {
     opacity: 0;
 }
+
+#go-up {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1.3s ease-in-out;
+}
