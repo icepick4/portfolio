@@ -30,7 +30,7 @@ export class ProjectsComponent implements OnInit {
         }
         let nbProjects = this.projects.length;
         let projectVisible = Math.round(
-            (scrollPercentRounded * nbProjects * 0.8) / 100
+            (scrollPercentRounded * nbProjects * 0.9) / 100
         );
         //set visible to true for the project on the scroll
         this.projects[projectVisible].visible = true;

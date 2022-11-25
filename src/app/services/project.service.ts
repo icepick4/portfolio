@@ -28,11 +28,21 @@ export class ProjectService {
         ),
         new Project(
             3,
+            'Daily steam stats',
+            'This project is a twitter bot that tweets daily stats about the steam platform. The bot tweets daily stats about trending games, most played games, and highest peak players.',
+            'I created this project to share data about video games, I also had to learn how to use Tweepy to create a twitter bot and host my project on a local Nas server.',
+            ['Python', 'Tweepy', 'Scraping', 'Nas server'],
+            'assets/3/image.png',
+            'https://github/icepick4/daily-steam-stats',
+            'https://twitter.com/DailySteamStats'
+        ),
+        new Project(
+            5,
             'Graph map analysis',
             'This project is an application to study the graph map of an imported csv or txt file, with many options to analyze the data.',
             'This project was created as part of my studies in the university. The main goal was to learn how to use the Graph Theory to solve problems especially with Java.',
             ['Java', 'Graph Theory', 'Path finding algorithms'],
-            'assets/3/image.png',
+            'assets/5/image.png',
             'https://github.com/icepick4/graphe-values',
             'https://github.com/icepick4/graphe-values/raw/main/graphe-values.jar'
         ),
@@ -47,12 +57,12 @@ export class ProjectService {
             'https://icepick4.github.io/tower-of-hanoi/threejs/public/'
         ),
         new Project(
-            5,
+            9,
             'Directory manager',
             'This project is a C application that allows users to manage a digital directory. The application allows users to add, edit and delete contacts. Moreover, the application allows users to search for contacts, filter them and sort them.',
             'This project was created as part of my studies in the university. The main goal was to learn how to use the C language to manage data.',
             ['C', 'Sorting algorithms'],
-            'assets/5/image.png',
+            'assets/9/image.png',
             'https://github.com/icepick4/annuaire',
             ''
         ),
@@ -66,7 +76,66 @@ export class ProjectService {
             'https://github.com/icepick4/timer-stats-rubiks-cube',
             ''
         ),
+        new Project(
+            7,
+            'Portfolio',
+            'This project is a web application that allows users to see my projects and contact me. The application is responsive and works on all devices.',
+            'I created this web site to show my projects and be able to share them in a professional way.',
+            ['Angular', 'Typescript', 'SCSS'],
+            'assets/7/image.png',
+            'https://github.com/icepick4/portfolio',
+            'https://icepick4.github.io/portfolio/'
+        ),
+        new Project(
+            8,
+            'Memory game: One Piece',
+            'This project is a game inspired by the Memory Game. The game is a simple memory game where the player must find all the pairs of cards. The memory design is inspired by the One Piece anime Universe.',
+            'This project was created to practice Typescript and have fun with the One Piece Universe and creating a game !',
+            ['Typescript'],
+            'assets/8/image.png',
+            'https://github.com/icepick4/Memory-One-Piece',
+            'https://icepick4.github.io/Memory-One-Piece/public'
+        ),
+        new Project(
+            10,
+            'TchouTchou',
+            'This web site allows you to create an account and buy tickets for any train station in France. You can also see the train schedule and the train status and many other features.',
+            'This project was created as part of my studies in the university. The main goal was to create an application managing a Database. So we decided to create a train station application.',
+            ['PHP', 'Oracle', 'HTML', 'CSS'],
+            'assets/10/image.png',
+            '',
+            'http://tchoutchou.ovh:8080/'
+        ),
+        new Project(
+            11,
+            'Connect 4',
+            'This project is a game inspired by the Connect 4. The game is a simple game where the player must align 4 disks of the same color. You can play against the computer or against another player.',
+            'This game was made with Python and Pygame.',
+            ['Python', 'Pygame'],
+            'assets/11/image.png',
+            'https://github.com/icepick4/Connect-4',
+            ''
+        ),
     ];
+
+    constructor() {
+        let sortNames: string[] = [
+            'Sonic Game',
+            'League Viewer',
+            'Daily steam stats',
+            'Tower of Hanoi',
+            'Graph map analysis',
+            "Rubik's Cube sessions manager",
+            'TchouTchou',
+            'Memory game: One Piece',
+            'Portfolio',
+            'Connect 4',
+            'Directory manager',
+        ];
+        this.projects.sort((a, b) => {
+            return sortNames.indexOf(a.name) - sortNames.indexOf(b.name);
+        });
+    }
 
     getProjectById(id: number): Project {
         const project = this.projects.find((project) => project.id === id);
