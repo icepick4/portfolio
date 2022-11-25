@@ -24,9 +24,9 @@
         <p>{{ project.purpose }}</p>
     </div>
     <div class="project__tools">
-        <h1>Tools</h1>
+        <h2>Tools</h2>
         <div *ngFor="let tool of project.tools" class="tool">
-            <h2>{{tool}}</h2>
+            <h3>{{tool}}</h3>
             <img [src]="getImageTool(tool)" alt="Tool image">
         </div>
     </div>

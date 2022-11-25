@@ -1,15 +1,16 @@
 .card {
-    margin: 80px;
+    margin-bottom: 80px;
+    margin-top: 80px;
     width: 37vw;
     height: 30vw;
     border-radius: 30px;
     border: 5px solid transparent;
-    border-image: url("/assets/images/border.png") 100 round;
+    // border-image: url("assets/images/border.png") 100 round;
     border-image-width: 20px;
     border-image-outset: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     transition: all 0.3s ease-in-out;
     background-color: #fff;
@@ -91,7 +92,7 @@
     background-color: #fff;
     border-radius: 5px;
     border: 5px solid transparent;
-    border-image: url("/assets/images/border.png") 100 round;
+    // border-image: url("assets/images/border.png") 100 round;
     border-image-width: 10px;
     border-image-outset: 5px;
     padding: 25px;
@@ -147,6 +148,9 @@
     transition: all 0.5s ease-in-out;
 }
 
+.move-left {
+    transform: translateX(-15%);
+}
 .project {
     display: flex;
     flex-direction: row;
@@ -167,66 +171,56 @@
     }
 
     .move-left {
-        transform: translateX(-5%);
+        transform: translateX(-15%);
     }
 }
 
 @media (max-width: 1400px) {
     .card {
         width: 42vw;
-        height: 36vw;
+        height: 55vw;
         .content {
             .text {
                 .tools {
                     p {
                         font-size: 1.4rem;
                     }
+                    .tool {
+                        font-size: 1.1rem;
+                    }
                 }
+                height: 15vw;
             }
         }
     }
     .move-left {
-        transform: translateX(-7%);
+        transform: translateX(-11%);
     }
 }
 
 @media (max-width: 1200px) {
     .card {
-        width: 55vw;
-        height: 48vw;
+        width: 50vw;
+        height: 60vw;
         .content {
             .text {
                 .tools {
                     p {
-                        font-size: 1.2rem;
+                        font-size: 1.5rem;
+                    }
+                    .tool {
+                        font-size: 1.3rem;
                     }
                 }
                 height: 15vw;
             }
         }
+    }
+    .footer {
+        width: 30%;
     }
     .move-left {
         transform: translateX(-8%);
-    }
-}
-
-@media (max-width: 1000px) {
-    .card {
-        width: 65vw;
-        height: 53vw;
-        .content {
-            .text {
-                .tools {
-                    p {
-                        font-size: 1.4rem;
-                    }
-                }
-                height: 15vw;
-            }
-        }
-    }
-    .move-left {
-        transform: translateX(-9%);
     }
 }
 
@@ -234,6 +228,24 @@
     .footer {
         opacity: 1;
         transform: rotate(360deg);
+        width: 65%;
+    }
+
+    .card {
+        width: 70vw;
+        height: 70vw;
+        .content {
+            .text {
+                .tools {
+                    p {
+                        font-size: 1.6rem;
+                    }
+                    .tool {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
     }
 
     .move-left {
@@ -249,37 +261,32 @@
     }
 }
 
-@media (max-width: 800px) {
-    .card {
-        width: 80vw;
-        height: 68vw;
-        .content {
-            .text {
-                .tools {
-                    p {
-                        font-size: 1.6rem;
-                    }
-                }
-                height: 20vw;
-            }
-        }
-    }
+// @media (max-width: 800px) {
+//     .card {
+//         .content {
+//             .text {
+//                 .tools {
+//                     p {
+//                         font-size: 1.6rem;
+//                     }
+//                 }
+//                 height: 20vw;
+//             }
+//         }
+//     }
 
-    .move-left {
-        transform: translateX(0);
-    }
+//     .move-left {
+//         transform: translateX(0);
+//     }
 
-    .move-right {
-        transform: translateX(0);
-    }
-    .footer {
-        width: 55%;
-    }
-}
+//     .move-right {
+//         transform: translateX(0);
+//     }
+// }
 
 @media (max-width: 600px) {
     .card {
-        width: 85vw;
+        width: 90vw;
         height: 90vw;
         .content {
             .text {
@@ -289,11 +296,11 @@
                     }
                     .tool {
                         li {
-                            font-size: 1rem;
+                            font-size: 0.8rem;
                         }
                     }
                 }
-                height: 35vw;
+                height: 20vw;
             }
         }
     }

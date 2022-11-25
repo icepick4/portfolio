@@ -1,5 +1,6 @@
 <div class="project">
-    <div class="card" [ngClass]="project.visible == true ? 'move-left' : 'move-right'">
+    <div class="card" [ngClass]="project.visible == true ? 'move-left' : 'move-right'" style="border-image: url('./assets/images/border.png') 100 round;    border-image-width: 20px;
+        border-image-outset: 10px;">
         <div class=" title">
             <a routerLink="/projects/{{project.id}}">
                 {{project.name}}
@@ -22,7 +23,8 @@
             </a>
         </div>
     </div>
-    <div class="footer" [ngClass]="project.visible == true ? 'rotate' : ''">
+    <div class="footer" [ngClass]="project.visible == true ? 'rotate' : ''" style="border-image: url('./assets/images/border.png') 100 round;    border-image-width: 10px;
+        border-image-outset: 5px;">
         <div class="url-git">
             <app-link-image [href]="project.urlGit" [image]="'assets/images/github.png'" [alt]="'GitHub'">
                 [router]="false">
