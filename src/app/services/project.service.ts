@@ -11,7 +11,7 @@ export class ProjectService {
             'Sonic Game',
             'This project is a game inspired by the Dino Game in Google Chrome. The game is a simple endless runner game where the player controls a character that must avoid obstacles.',
             'This project was created to practice my skills in Pygame and Python. I wanted to create a game that was simple and fun to play.',
-            ['Python', 'Pygame'],
+            ['Python', 'Pygame', 'Pixel Art'],
             'assets/1/image.png',
             'https://github.com/icepick4/Sonic-Game',
             ''
@@ -21,7 +21,7 @@ export class ProjectService {
             'League Viewer',
             'This project is a web application that allows users to search for League of Legends champions and visualize their skins, lore and names.',
             'This project was created to learn the famouse Angular framework. Moreover, I had to learn how to use the Riot Games API to get the data. It was a great learning experience, mostly because it was my first javascript framework.',
-            ['Angular', 'Riot Games API'],
+            ['Angular', 'Typescript', 'SCSS', 'Riot Games API'],
             'assets/2/image.png',
             'https://github.com/icepick4/league-viewer',
             'https://icepick4.github.io/league-viewer/'
@@ -31,7 +31,7 @@ export class ProjectService {
             'Graph map analysis',
             'This project is an application to study the graph map of an imported csv or txt file, with many options to analyze the data.',
             'This project was created as part of my studies in the university. The main goal was to learn how to use the Graph Theory to solve problems especially with Java.',
-            ['Java', 'Graph Theory'],
+            ['Java', 'Graph Theory', 'Path finding algorithms'],
             'assets/3/image.png',
             'https://github.com/icepick4/graphe-values',
             'https://github.com/icepick4/graphe-values/raw/main/graphe-values.jar'
@@ -40,18 +40,18 @@ export class ProjectService {
             4,
             'Tower of Hanoi',
             'This project is a game inspired by the Tower of Hanoi. The game is a simple puzzle game where the player must move the disks from the first tower to the last one.',
-            'This project was created to practice TypeScript and learn how to use Three.js.',
-            ['TypeScript', 'Three.js'],
+            'This project was created to practice Typescript and learn how to use Three.js.',
+            ['Typescript', 'Three.js'],
             'assets/4/image.png',
             'https://github.com/icepick4/tower-of-hanoi',
-            'https://icepick4.github.io/tower-of-hanoi/'
+            'https://icepick4.github.io/tower-of-hanoi/threejs/public/'
         ),
         new Project(
             5,
             'Directory manager',
             'This project is a C application that allows users to manage a digital directory. The application allows users to add, edit and delete contacts. Moreover, the application allows users to search for contacts, filter them and sort them.',
             'This project was created as part of my studies in the university. The main goal was to learn how to use the C language to manage data.',
-            ['C'],
+            ['C', 'Sorting algorithms'],
             'assets/5/image.png',
             'https://github.com/icepick4/annuaire',
             ''

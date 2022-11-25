@@ -13,8 +13,10 @@
         margin-bottom: 1rem;
     }
     justify-content: center;
-    gap: 1rem;
-    margin-bottom: 3rem;
+}
+
+h1 {
+    text-align: center;
 }
 
 .about {
@@ -26,10 +28,11 @@
     img {
         height: 3vw;
     }
+    margin-bottom: 2.5rem;
 }
 
 .animate {
-    @for $i from 1 through 25 {
+    @for $i from 1 through 26 {
         &:nth-child(#{$i}) {
             h3 {
                 animation: appearFromLeft
@@ -50,6 +53,11 @@
 .title {
     opacity: 0;
     transition: opacity 1.3s ease-in-out;
+}
+
+.title-size {
+    font-size: 2rem;
+    width: 90%;
 }
 
 #languages-title {
@@ -75,8 +83,9 @@
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
     .about {
+        flex-direction: column;
         width: 70%;
         img {
             height: 5vw;
@@ -86,7 +95,6 @@
 
 @media (max-width: 600px) {
     .about {
-        flex-direction: column;
         width: 100%;
         img {
             height: 7vw;
@@ -97,7 +105,7 @@
 @keyframes appearFromLeft {
     from {
         opacity: 0;
-        transform: translateX(-400px);
+        transform: translateX(-15vw);
     }
     to {
         opacity: 1;
@@ -108,7 +116,7 @@
 @keyframes appearFromRight {
     from {
         opacity: 0;
-        transform: translateX(400px);
+        transform: translateX(15vw);
     }
     to {
         opacity: 1;
