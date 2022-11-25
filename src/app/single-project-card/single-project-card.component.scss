@@ -37,7 +37,7 @@
         margin: 10px;
         margin-bottom: 50px;
         img {
-            width: 60%;
+            width: 65%;
             margin: 0 auto;
         }
         //center the image
@@ -62,7 +62,7 @@
         font-size: 2rem;
         font-weight: 600;
         color: #000;
-        width: 60%;
+        width: 65%;
         text-align: center;
         margin-top: 3rem;
     }
@@ -104,7 +104,7 @@
         }
         &__tools {
             h3 {
-                font-size: 4vw;
+                font-size: 5vw;
             }
             .tool {
                 img {
@@ -118,7 +118,7 @@
 @media only screen and (hover: none) and (pointer: coarse) {
     .project {
         h2 {
-            font-size: 1.3em;
+            font-size: 1.2em;
         }
         p {
             font-size: 0.75em;
@@ -132,6 +132,15 @@
                     height: 2em;
                 }
             }
+        }
+        &__description {
+            width: 85%;
+        }
+        &__purpose {
+            width: 85%;
+        }
+        &__title {
+            font-size: 2em;
         }
     }
 }

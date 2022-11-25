@@ -90,6 +90,11 @@ export class AboutService {
                 Type.Tool
             ),
             new About(
+                'Docker',
+                'https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white',
+                Type.Tool
+            ),
+            new About(
                 'Linux',
                 'https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black',
                 Type.Tool
@@ -145,14 +150,23 @@ export class AboutService {
                 return info.image;
             }
         }
-        return `https://img.shields.io/badge/${title}-${this.getColor()}?style=for-the-badge&logo=data:image/webp;base64,UklGRs4AAABXRUJQVlA4TMEAAAAvn8AnEE+gFpIkaDGefP3DpTiDMziAU1ETSQpDlUUw6EAsNmOhJAAaBksBNP1TrMnXyzD/AYCwG+Uz0UlBrTMWttv9A6vIVutgAQuxgAUsYAELsRAL0Xv6br/IdCai/xMgP5ft+hWgsXNwHhxsNDpL3majnp0Hg8m6d61xcFK5DBidyY1BZfEzBpNC5WTxMzqTcnAFMAaTcnZjsOQZnUm5dKOz2hmDSblZKTeXMqMzKe8vZcZgUt5fz/KgfGQ9WxUBAA==`;
+        return `https://img.shields.io/badge/${title}-${this.getColor(
+            title
+        )}?style=for-the-badge&logo=data:image/webp;base64,UklGRs4AAABXRUJQVlA4TMEAAAAvn8AnEE+gFpIkaDGefP3DpTiDMziAU1ETSQpDlUUw6EAsNmOhJAAaBksBNP1TrMnXyzD/AYCwG+Uz0UlBrTMWttv9A6vIVutgAQuxgAUsYAELsRAL0Xv6br/IdCai/xMgP5ft+hWgsXNwHhxsNDpL3majnp0Hg8m6d61xcFK5DBidyY1BZfEzBpNC5WTxMzqTcnAFMAaTcnZjsOQZnUm5dKOz2hmDSblZKTeXMqMzKe8vZcZgUt5fz/KgfGQ9WxUBAA==`;
     }
 
-    getColor() {
-        //get hexa color
-        const hexa = Math.floor(Math.random() * 16777215).toString(16);
-        //add 0 if hexa is less than 6
-        return hexa.length === 6 ? hexa : '0' + hexa;
+    getColor(name: string) {
+        //get unique color for each name
+        let hash = 0;
+        for (let i = 0; i < name.length; i++) {
+            hash = name.charCodeAt(i) + ((hash << 5) - hash);
+        }
+        let color = '';
+        for (let i = 0; i < 3; i++) {
+            const value = (hash >> (i * 8)) & 0xff;
+            color += ('00' + value.toString(16)).substr(-2);
+        }
+        return color;
     }
 
     getAllHobbies() {

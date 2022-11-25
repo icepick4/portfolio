@@ -24,7 +24,6 @@ export class AboutComponent implements OnInit {
         this.elementsVisible();
         this.toolsTitle = document.getElementById('tools-title')!;
         this.hobbiesTitle = document.getElementById('hobbies-title')!;
-        console.log(this.hobbiesTitle);
     }
 
     getAllLanguages() {
@@ -48,11 +47,6 @@ export class AboutComponent implements OnInit {
                 (document.body.scrollHeight - window.innerHeight)) *
             100;
         scroll = Math.round(scroll);
-        if (scroll >= 20) {
-            const goUp = document.getElementById('go-up')!;
-            goUp.style.visibility = 'visible';
-            goUp.style.opacity = '1';
-        }
         let visible = Math.round((scroll * nbAbouts) / 100);
         if (!visible) {
             visible = 2;

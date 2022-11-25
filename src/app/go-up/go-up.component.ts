@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
     selector: 'app-go-up',
@@ -19,5 +19,19 @@ export class GoUpComponent implements OnInit {
                 window.clearInterval(scrollToTop);
             }
         }, 3);
+    }
+
+    @HostListener('window:scroll', ['$event'])
+    ngAfterContentChecked() {
+        let scroll =
+            (window.scrollY /
+                (document.body.scrollHeight - window.innerHeight)) *
+            100;
+        scroll = Math.round(scroll);
+        if (scroll >= 15) {
+            const goUp = document.getElementById('go-up')!;
+            goUp.style.visibility = 'visible';
+            goUp.style.opacity = '1';
+        }
     }
 }
