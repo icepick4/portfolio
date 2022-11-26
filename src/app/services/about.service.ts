@@ -26,7 +26,7 @@ export class AboutService {
             ),
             new About(
                 'Java',
-                'https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white',
+                'https://img.shields.io/badge/JAVA-ED8B00?style=for-the-badge&logo=data:image/png;base64,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&logoColor=white',
                 Type.Language
             ),
             new About(
@@ -64,14 +64,19 @@ export class AboutService {
                 'https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white',
                 Type.Language
             ),
+            // new About(
+            //     'Symfony',
+            //     'https://img.shields.io/badge/Symfony-000000?style=for-the-badge&logo=symfony&logoColor=white',
+            //     Type.Language
+            // ),
             new About(
                 'MySQL',
                 'https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white',
                 Type.Tool
             ),
             new About(
-                'Visual Studio Code',
-                'https://img.shields.io/badge/Visual_Studio_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white',
+                'VS Code',
+                'https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white',
                 Type.Tool
             ),
             new About(
@@ -125,6 +130,8 @@ export class AboutService {
                 Type.Hobby
             ),
         ];
+        //sort with title, shortest first
+        this.infos.sort((a, b) => a.title.length - b.title.length);
     }
 
     getAllAbouts() {

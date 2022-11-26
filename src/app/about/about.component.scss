@@ -1,10 +1,13 @@
 @use "sass:math";
 .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+    display: grid;
+    //two columnms
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 2rem;
+    margin: 0 auto;
+    width: 45%;
+    justify-items: center;
+    // width: 100%;
     margin: 0 auto;
     h3 {
         font-size: 1.5rem;
@@ -17,34 +20,56 @@
 
 h1 {
     text-align: center;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    font-size: 6rem;
 }
 
 .about {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    width: 38%;
+    width: 90%;
+    gap: 4rem;
     img {
         height: 3vw;
     }
+    ul {
+        margin: 0;
+        // padding: 5px;
+        text-align: center;
+        li {
+            font-size: 4rem;
+        }
+    }
     margin-bottom: 2.5rem;
+    &:nth-child(even) {
+        justify-content: flex-start;
+    }
 }
 
 .animate {
     @for $i from 1 through 26 {
-        &:nth-child(#{$i}) {
-            h3 {
-                animation: appearFromLeft
-                    #{(math.div($i, 20)) +
-                    0.4}s
-                    ease-in-out;
-            }
+        &:nth-child(even) {
             img {
-                animation: appearFromRight
-                    #{(math.div($i, 20)) +
-                    0.4}s
-                    ease-in-out;
+                &:nth-child(odd) {
+                    animation: appearFromRight
+                        #{(math.div($i, 20)) +
+                        0.4}s
+                        ease-in-out;
+                }
+            }
+        }
+        &:nth-child(odd) {
+            img {
+                &:nth-child(odd) {
+                    animation: appearFromLeft
+                        #{(math.div($i, 20)) +
+                        0.4}s
+                        ease-in-out;
+                }
             }
         }
     }
@@ -56,7 +81,7 @@ h1 {
 }
 
 .title-size {
-    font-size: 2rem;
+    font-size: 3rem;
     width: 90%;
 }
 
@@ -76,7 +101,6 @@ h1 {
 
 @media (max-width: 1150px) {
     .about {
-        width: 50%;
         img {
             height: 4vw;
         }
@@ -85,8 +109,6 @@ h1 {
 
 @media (max-width: 800px) {
     .about {
-        flex-direction: column;
-        width: 70%;
         img {
             height: 5vw;
         }
@@ -95,10 +117,15 @@ h1 {
 
 @media (max-width: 600px) {
     .about {
-        width: 100%;
         img {
-            height: 7vw;
+            height: 6.5vw;
         }
+    }
+}
+
+@media only screen and (hover: none) and (pointer: coarse) {
+    .title-size {
+        font-size: 2rem;
     }
 }
 

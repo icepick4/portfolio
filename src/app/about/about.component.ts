@@ -27,6 +27,12 @@ export class AboutComponent implements OnInit {
         console.log(this.hobbiesTitle);
     }
 
+    ngOnDestroy() {
+        for (const about of this.abouts) {
+            about.animation = false;
+        }
+    }
+
     getAllLanguages() {
         this.languages = this.aboutService.getAllLanguages();
     }

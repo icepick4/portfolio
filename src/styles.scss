@@ -1,9 +1,5 @@
 body {
-    background-image: url(assets/images/background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background-color: #4edad3;
     height: 100vh;
     width: 100vw;
     margin: 0;
@@ -22,7 +18,7 @@ body {
 
 a {
     text-decoration: none;
-    color: #5435b3;
+    color: #333;
     display: block;
     position: relative;
     overflow: hidden;
@@ -34,8 +30,8 @@ a {
             bottom: 0;
             left: 0;
             width: 100%;
-            height: 2px;
-            background-color: #5435b3;
+            height: 4px;
+            background-color: rgb(0, 0, 0);
             opacity: 0;
             transition: opacity 400ms, transform 400ms;
             transform: translate3d(-105%, 0, 0);

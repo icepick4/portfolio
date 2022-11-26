@@ -1,11 +1,6 @@
 #photo {
     width: 13rem;
     height: 13rem;
-    filter: grayscale(100%);
-    transition: all 0.2s ease-in-out;
-    &:hover {
-        filter: grayscale(0%);
-    }
     animation: appearAnimScale 1.5s ease-in-out;
 }
 
