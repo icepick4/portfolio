@@ -29,7 +29,6 @@ export class ProjectsComponent implements OnInit {
         );
         //set visible to true for the project on the scroll
         this.projects[projectVisible].visible = true;
-
         //disable others
         for (let i = 0; i < nbProjects; i++) {
             if (i != projectVisible) {

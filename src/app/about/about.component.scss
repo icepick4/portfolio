@@ -56,8 +56,7 @@ h1 {
             img {
                 &:nth-child(odd) {
                     animation: appearFromRight
-                        #{(math.div($i, 20)) +
-                        0.4}s
+                        #{(math.div($i, 20))}s
                         ease-in-out;
                 }
             }
@@ -66,8 +65,7 @@ h1 {
             img {
                 &:nth-child(odd) {
                     animation: appearFromLeft
-                        #{(math.div($i, 20)) +
-                        0.4}s
+                        #{(math.div($i, 20))}s
                         ease-in-out;
                 }
             }

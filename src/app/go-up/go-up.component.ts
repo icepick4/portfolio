@@ -28,7 +28,7 @@ export class GoUpComponent implements OnInit {
                 (document.body.scrollHeight - window.innerHeight)) *
             100;
         scroll = Math.round(scroll);
-        if (scroll >= 15) {
+        if (scroll >= 10) {
             const goUp = document.getElementById('go-up')!;
             goUp.style.visibility = 'visible';
             goUp.style.opacity = '1';

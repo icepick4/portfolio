@@ -12,17 +12,12 @@
     font-size: 1.75rem;
     color: #8d72e1;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     border-radius: 20px;
+    transition: all 0.2s ease-in-out;
     &:hover {
         background: #8d72e1;
         color: #fff;
     }
-    padding: 20px;
-}
-
-@media only screen and (hover: none) and (pointer: coarse) {
-    .link-image {
-        font-size: 1em;
-    }
+    padding: 10px 20px;
 }

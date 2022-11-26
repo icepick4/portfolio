@@ -6,7 +6,6 @@ body {
     padding: 0;
     overflow-x: hidden;
 }
-
 @font-face {
     font-family: "Monocraft";
     src: url("assets/fonts/Monocraft.otf");
@@ -109,5 +108,11 @@ path {
     ::-webkit-scrollbar-thumb {
         background: #707070;
         border-radius: 10px;
+    }
+}
+
+@media only screen and (hover: none) and (pointer: coarse) {
+    body {
+        overflow-x: hidden;
     }
 }

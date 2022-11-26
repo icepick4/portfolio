@@ -25,10 +25,17 @@
     &__description {
         font-size: 2rem;
         font-weight: 600;
+        padding: 0 1%;
         color: #000;
         width: 65%;
         text-align: center;
         margin-top: 3rem;
+        background: #fff;
+        border-radius: 20px;
+        border: 10px solid transparent;
+        border-image: url(../../assets/images/border.png) 100 round;
+        border-image-width: 20px;
+        border-image-outset: 10px;
     }
 
     &__image {
@@ -63,17 +70,31 @@
         font-weight: 600;
         color: #000;
         width: 65%;
+        padding: 0 1%;
         text-align: center;
         margin-top: 3rem;
+        background: #fff;
+        border-radius: 20px;
+        border: 10px solid transparent;
+        border-image: url(../../assets/images/border.png) 100 round;
+        border-image-width: 20px;
+        border-image-outset: 10px;
     }
 
     &__tools {
+        margin-top: 3rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        // align-items: center;
         h2 {
             font-size: 3rem;
+            padding: 5%;
+            background: #fff;
+            border-radius: 20px;
+            border: 10px solid transparent;
+            border-image: url(../../assets/images/border.png) 100 round;
+            border-image-width: 20px;
+            border-image-outset: 10px;
         }
         h3 {
             font-size: 2vw;
@@ -115,10 +136,16 @@
     }
 }
 
+@media (max-width: 600px) {
+    h2 {
+        font-size: 2rem;
+    }
+}
+
 @media only screen and (hover: none) and (pointer: coarse) {
     .project {
         h2 {
-            font-size: 1.2em;
+            font-size: 2rem;
         }
         p {
             font-size: 0.75em;
@@ -132,15 +159,19 @@
                     height: 2em;
                 }
             }
+            width: 65%;
         }
         &__description {
-            width: 85%;
+            width: 65%;
         }
         &__purpose {
-            width: 85%;
+            width: 65%;
         }
         &__title {
             font-size: 2em;
+        }
+        &__links {
+            align-items: center;
         }
     }
 }
