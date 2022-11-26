@@ -29,9 +29,9 @@ export class ProjectService {
         new Project(
             3,
             'Daily steam stats',
-            'This project is a twitter bot that tweets daily stats about the steam platform. The bot tweets daily stats about trending games, most played games, and highest peak players.',
-            'I created this project to share data about video games, I also had to learn how to use Tweepy to create a twitter bot and host my project on a local Nas server.',
-            ['Python', 'Tweepy', 'Scraping', 'Nas server'],
+            'This project is a twitter bot that tweets daily stats about the steam platform. The bot tweets stats about trending games, most played games, and highest peak players. Ths bot is hosted locally on my TrueNAS server with a Docker container.',
+            'I created this project to share data about video games, I had to learn how to use Tweepy to create a twitter bot and how to host my project on a local Nas server with docker.',
+            ['Python', 'Tweepy', 'Docker', 'Scraping', 'Nas server'],
             'assets/3/image.png',
             'https://github/icepick4/daily-steam-stats',
             'https://twitter.com/DailySteamStats'
@@ -50,7 +50,7 @@ export class ProjectService {
             4,
             'Tower of Hanoi',
             'This project is a game inspired by the Tower of Hanoi. The game is a simple puzzle game where the player must move the disks from the first tower to the last one.',
-            'This project was created to practice Typescript and learn how to use Three.js.',
+            'This project was created to practice Typescript and learn how to use Three.js (such a great library).',
             ['Typescript', 'Three.js'],
             'assets/4/image.png',
             'https://github.com/icepick4/tower-of-hanoi',
@@ -79,7 +79,7 @@ export class ProjectService {
         new Project(
             7,
             'Portfolio',
-            'This project is a web application that allows users to see my projects and contact me. The application is responsive and works on all devices.',
+            'This project is a web application that allows users to see my projects and contact me. The application is responsive and works on all devices. Moreover, now my portfolio is fully automated, I can add new projects and they will be automatically added to the portfolio with right badges for each languages, technos.',
             'I created this web site to show my projects and be able to share them in a professional way.',
             ['Angular', 'Typescript', 'SCSS'],
             'assets/7/image.png',

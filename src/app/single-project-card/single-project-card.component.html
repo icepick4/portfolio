@@ -1,6 +1,7 @@
 <div class="project">
     <div class="project__links">
-        <app-link-image [href]="project.urlGit" [image]="'assets/images/github.png'" [alt]="'View the code on Github'">
+        <app-link-image [href]="project.urlGit" [image]="'assets/images/github.png'" [alt]="'View code on Github'"
+            class="link">
         </app-link-image>
         <div *ngIf="project.urlProject != ''">
             <app-link-image [href]="project.urlProject" [image]="'assets/images/link.png'" [alt]="'View the project'">

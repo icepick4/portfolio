@@ -3,7 +3,8 @@ export class About {
         public title: string,
         public image: string,
         public type: Type,
-        public animation: boolean = false
+        public animation: boolean = false,
+        public color: string = '#fff'
     ) {}
 }
 
