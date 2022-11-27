@@ -40,7 +40,7 @@ export class ProjectService {
             5,
             'Graph map analysis',
             'This project is an application to study the graph map of an imported csv or txt file, with many options to analyze the data.',
-            'This project was created as part of my studies in the university. The main goal was to learn how to use the Graph Theory to solve problems especially with Java.',
+            'This project was created as part of my studies in the university. The main goal was to learn how to use the Graph Theory to solve problems especially with the shortest path algorithm and let the user interact with the graph map.',
             ['Java', 'Graph Theory', 'Path finding algorithms'],
             'assets/5/image.png',
             'https://github.com/icepick4/graphe-values',
