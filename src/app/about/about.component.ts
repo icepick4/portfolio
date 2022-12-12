@@ -53,11 +53,11 @@ export class AboutComponent implements OnInit {
                 (document.body.scrollHeight - window.innerHeight)) *
             100;
         scroll = Math.round(scroll);
-        let visible = Math.round((scroll * nbAbouts) / 100);
+        let visible = Math.round((scroll * nbAbouts) / 120);
         if (!visible) {
-            visible = 2;
+            visible = 0;
         }
-        for (let i = 0; i < visible + 6 - visible * 0.25; i++) {
+        for (let i = 0; i < visible + 4; i++) {
             if (i < nbAbouts) {
                 this.abouts[i].animation = true;
                 if (i >= this.languages.length - 1) {

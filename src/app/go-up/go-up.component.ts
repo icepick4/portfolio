@@ -11,6 +11,7 @@ export class GoUpComponent implements OnInit {
     ngOnInit(): void {}
 
     onActivate(event: any) {
+        //scroll to the top of the page
         let scrollToTop = window.setInterval(() => {
             let pos = window.pageYOffset;
             if (pos > 0) {
