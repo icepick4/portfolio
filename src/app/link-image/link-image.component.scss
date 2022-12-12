@@ -21,3 +21,9 @@
     }
     padding: 10px 20px;
 }
+
+@media only screen and (hover: none) and (pointer: coarse) {
+    .link-image {
+        background: transparent;
+    }
+}
