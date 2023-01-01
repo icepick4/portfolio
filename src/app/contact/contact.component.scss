@@ -7,7 +7,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    height: 70%;
+    height: 80%;
     background: rgb(141, 114, 225, 0);
     border-radius: 20px;
     padding: 20px;
@@ -23,21 +23,27 @@ body {
         flex-direction: row;
         justify-content: left;
         align-items: center;
-        padding: 10px;
+        padding: 20px;
         img {
             margin-right: 20px;
             width: 5vw;
-            filter: brightness(0) invert(1);
         }
         &:hover {
             background: #8d72e1;
-
-            border-radius: 20px;
+            border-radius: 50px;
             p {
                 color: #fff;
             }
             transition: background 0.2s ease-in-out;
+            img {
+                filter: brightness(0) invert(1);
+                transition: filter 0.2s ease-in-out;
+            }
         }
+        border: 20px solid transparent;
+        border-image: url("../../assets/images/border.png") 100 round;
+        border-image-width: 20px;
+        border-image-outset: 4px;
     }
     .content-left {
         display: flex;
@@ -86,10 +92,11 @@ body {
 @media only screen and (hover: none) and (pointer: coarse) {
     .content {
         .link-content {
-            border-radius: 20px;
+            border-radius: 50px;
             background: #8d72e1;
             p {
                 color: #fff;
+                font-size: 3.5vw;
             }
             img {
                 width: 12vw;

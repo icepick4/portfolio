@@ -9,9 +9,19 @@ import { Project } from '../models/project.model';
 })
 export class ProjectCardComponent implements OnInit {
     @Input() project!: Project;
+    typeProject!: string;
     constructor(private router: Router) {}
 
-    ngOnInit(): void {}
+    ngOnInit(): void {
+        if (
+            this.project.urlProject.includes('.zip') ||
+            this.project.urlProject.includes('.jar')
+        ) {
+            this.typeProject = 'Download';
+        } else {
+            this.typeProject = 'View the website';
+        }
+    }
 
     goSingleProject() {
         this.router.navigateByUrl(`projects/${this.project.id}`);
