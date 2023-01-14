@@ -53,7 +53,7 @@ export class AboutComponent implements OnInit {
                 (document.body.scrollHeight - window.innerHeight)) *
             100;
         scroll = Math.round(scroll);
-        let visible = Math.round((scroll * nbAbouts) / 120);
+        let visible = Math.round((scroll * nbAbouts) / 123);
         if (!visible) {
             visible = 0;
         }

@@ -1,44 +1,9 @@
-<div class="project">
-    <div class="card" [ngClass]="project.visible == true ? 'move-left' : 'move-right'" style="border-image: url('./assets/images/border.png') 100 round;    border-image-width: 20px;
-        border-image-outset: 10px;">
-        <div class=" title">
-            <a routerLink="/projects/{{project.id}}">
-                {{project.name}}
-            </a>
-        </div>
-        <div class="content">
-            <a routerLink="/projects/{{project.id}}">
-                <div class="text">
-                    <div class="tools">
-                        <p>Tools</p>
-                        <ul>
-                            <li *ngFor="let tool of project.tools" class="tool">{{tool}}</li>
-                        </ul>
-                    </div>
 
-                </div>
-                <div class="image">
-                    <img [src]="project.image" [alt]="project.name + ' image'">
-                </div>
-            </a>
+<div class="container">
+    <a [routerLink]="['/projects', project.id]">
+        <div class="image">
+            <img id="logo" [src]="project.image" [alt]="project.name + ' image'">
+            <p id="title">{{project.name}}</p>
         </div>
-    </div>
-    <div class="footer" [ngClass]="project.visible == true ? 'rotate' : ''" style="border-image: url('./assets/images/border.png') 100 round;    border-image-width: 10px;
-        border-image-outset: 5px;">
-        <div class="url-git">
-            <app-link-image [href]="project.urlGit" [image]="'assets/images/github.png'" [alt]="'GitHub'">
-                [router]="false">
-            </app-link-image>
-        </div>
-        <div class="url-project" *ngIf="project.urlProject != ''">
-            <app-link-image [href]="project.urlProject" [image]="'assets/images/link.png'" [alt]="'Website'"
-                [router]="false">
-            </app-link-image>
-        </div>
-        <div class="url-more">
-            <app-link-image [href]="'/projects/'+project.id" [image]="'assets/images/more.png'" [alt]="'Learn more'"
-                [router]="true">
-            </app-link-image>
-        </div>
-    </div>
+    </a>
 </div>
