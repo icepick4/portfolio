@@ -19,7 +19,6 @@
 <div class="content">
     <div *ngFor="let tool of tools" id="tools" class="about"
         [ngClass]="tool.animation == true ? 'animate' : 'disabled'">
-        <!-- <h3>{{tool.title}}</h3> -->
         <img [src]="tool.image" alt="{{tool.title}}">
     </div>
 </div>
@@ -27,8 +26,6 @@
 <div class="content">
     <div *ngFor="let hobby of hobbies" id="hobbies" class="about"
         [ngClass]="hobby.animation == true ? 'animate' : 'disabled'">
-        <!-- <h3>{{hobby.title}}</h3> -->
         <img [src]="hobby.image" alt="{{hobby.title}}">
     </div>
 </div>
-<app-go-up></app-go-up>

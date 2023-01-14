@@ -1,4 +1,7 @@
 <div class="project">
+    <div class="project__title">
+        <h1>{{ project.name }}</h1>
+    </div>
     <div class="project__links">
         <app-link-image [href]="project.urlGit" [image]="'assets/images/github.png'" [alt]="'View code on Github'"
             class="link">
@@ -9,9 +12,6 @@
         </div>
         <app-link-image href="/projects" [image]="'assets/images/more.png'" [alt]="'Go back'" [router]="true">
         </app-link-image>
-    </div>
-    <div class="project__title">
-        <h1>{{ project.name }}</h1>
     </div>
     <div class="project__image">
         <img [src]="project.image" alt="Project image">
@@ -32,4 +32,3 @@
         </div>
     </div>
 </div>
-<app-go-up></app-go-up>

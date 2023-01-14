@@ -6,6 +6,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
     styleUrls: ['./go-up.component.scss'],
 })
 export class GoUpComponent implements OnInit {
+    showGoUp = false;
     constructor() {}
 
     ngOnInit(): void {}
@@ -29,10 +30,12 @@ export class GoUpComponent implements OnInit {
                 (document.body.scrollHeight - window.innerHeight)) *
             100;
         scroll = Math.round(scroll);
-        if (scroll >= 10) {
-            const goUp = document.getElementById('go-up')!;
-            goUp.style.visibility = 'visible';
-            goUp.style.opacity = '1';
+        console.log(scroll)
+        if(scroll > 20){
+            this.showGoUp = true;
+        }else{
+            this.showGoUp = false;
         }
+        
     }
 }
