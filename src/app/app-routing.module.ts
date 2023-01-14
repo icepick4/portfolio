@@ -5,6 +5,7 @@ import { ContactComponent } from './contact/contact.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { SingleProjectCardComponent } from './single-project-card/single-project-card.component';
+import { SkillsComponent } from './skills/skills.component';
 
 const routes: Routes = [
     {
@@ -29,6 +30,10 @@ const routes: Routes = [
         path: 'about',
         component: AboutComponent,
     },
+    {
+        path: 'skills',
+        component: SkillsComponent,
+    }
 ];
 
 @NgModule({

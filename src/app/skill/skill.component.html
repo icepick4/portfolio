@@ -1,0 +1,25 @@
+<div class="competence">
+    <h1 id="title">
+        {{skill.title}}
+    </h1>
+    <div class="desc">
+        <p>{{skill.description}}</p>
+    </div>
+    <h2>
+        Situations professionnelles
+    </h2>
+    <div class="pro_desc">
+        <p>{{skill.professionnalDesc}}</p>
+    </div>
+    <div class="levels">
+        <div class="level" *ngFor="let level of skill.levels">
+            <h2>Niveau {{level.id}}</h2>
+            <div class="level__title">
+                <h2>{{level.title}}</h2>
+            </div>
+            <div class="level__skills" *ngFor="let skill of level.skills">
+                <li>{{skill}}</li>
+            </div>
+        </div>
+    </div>
+</div>
