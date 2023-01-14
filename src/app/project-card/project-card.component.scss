@@ -25,12 +25,12 @@
         color : #fff;
         user-select: none;
     }
-    margin-bottom: 25px;
+    margin-bottom: 1rem;
 
     &:hover{
         img{
             transform: scale(1.1);
-            filter: brightness(0.45);
+            filter: brightness(0.4);
         }
         #title{
             opacity: 1;

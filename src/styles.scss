@@ -17,7 +17,7 @@ body {
 
 a {
     text-decoration: none;
-    color: rgb(67, 66, 66);
+    color: rgb(22, 22, 22);
     display: block;
     position: relative;
     overflow: hidden;
@@ -34,7 +34,6 @@ a {
             transition: opacity 400ms, transform 400ms;
             transform: translate3d(-105%, 0, 0);
         }
-
         &:hover::after {
             opacity: 1;
             transform: translate3d(0, 0, 0);
