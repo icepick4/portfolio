@@ -7,8 +7,14 @@
             class="link">
         </app-link-image>
         <div *ngIf="project.urlProject != ''">
-            <app-link-image [href]="project.urlProject" [image]="'assets/images/link.png'" [alt]="'View the project'">
-            </app-link-image>
+            <div *ngIf="project.urlProject.includes('.zip') || project.urlProject.includes('.jar')">
+                <app-link-image [href]="project.urlProject" [image]="'assets/images/link.png'" [alt]="'Download the project'">
+                </app-link-image>
+            </div>
+            <div *ngIf="!project.urlProject.includes('.zip') && !project.urlProject.includes('.jar')">
+                <app-link-image [href]="project.urlProject" [image]="'assets/images/link.png'" [alt]="'View website'">
+                </app-link-image>
+            </div>
         </div>
         <app-link-image href="/projects" [image]="'assets/images/more.png'" [alt]="'Go back'" [router]="true">
         </app-link-image>

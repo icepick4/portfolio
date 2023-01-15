@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .image {
     display: inline-block;
     overflow: hidden;
@@ -40,12 +42,18 @@
     }
 }
 
+
 .container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @for $i from 1 through 11 {
+        #project-#{$i} {
+            animation: animate-appear #{$i * 0.15 + 0.4}s ease-in-out;
+        }
+    }
 }
 
+// display: flex;
+// align-items: center;
+// justify-content: center;
 @media only screen and (hover: none) and (pointer: coarse){
     .image{
         img{
@@ -59,3 +67,16 @@
     }
 }
 
+@keyframes animate-appear {
+    0% {
+        opacity: 0;
+        filter: brightness(1.1) saturate(1.1);
+        transform: scale(0.8, 0.8);
+      }
+      100% {
+        opacity: 1;
+        filter: brightness(1) saturate(1);
+        transform: scale(1, 1);
+      }
+}
+  
