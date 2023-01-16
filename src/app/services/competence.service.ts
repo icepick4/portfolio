@@ -10,6 +10,7 @@ export class CompetenceService {
     constructor() {
         this.competences = [
             new Competence(
+                1,
                 'Réaliser',
                 [
                     new Level(
@@ -49,6 +50,7 @@ export class CompetenceService {
                 'Elaborer une application informatique, faire évoluer une application informatique, maintenir en conditions opérationnelles une application informatique.',
             ),
             new Competence(
+                2,
                 'Optimiser',
                 [
                     new Level(
@@ -87,6 +89,7 @@ export class CompetenceService {
                 'Améliorer les performances des programmes dans des contextes contraints. Limiter l\'impact environnemental d\'une application informatique. Mettre en place des applications informatiques adaptées et efficaces.',
             ),
             new Competence(
+                3,
                 'Administrer',
                 [
                     new Level(
@@ -115,6 +118,7 @@ export class CompetenceService {
                 'Déployer une nouvelle architecture technique, améliorer une infrastructure existante, sécuriser les applications et les services.',
             ),
             new Competence(
+                4,
                 'Gérer',
                 [
                     new Level(
@@ -143,6 +147,7 @@ export class CompetenceService {
                 'Lancer un nouveau projet, sécuriser des données, exploiter des données pour la prise de décisions',
             ),
             new Competence(
+                5,
                 'Conduire',
                 [
                     new Level(
@@ -172,6 +177,7 @@ export class CompetenceService {
                 'Lancer un nouveau projet, piloter le maintien d\'un projet en condition opérationnelle, faire évoluer un système d\'information.'
             ),
             new Competence(
+                6,
                 'Collaborer',
                 [
                     new Level(

@@ -1,3 +1,12 @@
-<div *ngFor="let skill of skills" class="skill">
-    <app-skill [skill]="skill"></app-skill>
+<div class="skills">
+    <div *ngFor="let skill of skills" class="skill">
+            <a routerLink="/skills/{{skill.id}}">
+                <div class="skill__title">
+                    <h2>{{skill.title}}</h2>
+                </div>
+                <div class="skill__desc">
+                    <p>{{skill.description}}</p>
+                </div>
+            </a>
+    </div>
 </div>

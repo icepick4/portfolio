@@ -5,6 +5,7 @@ import { ContactComponent } from './contact/contact.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { SingleProjectCardComponent } from './single-project-card/single-project-card.component';
+import { SkillComponent } from './skill/skill.component';
 import { SkillsComponent } from './skills/skills.component';
 
 const routes: Routes = [
@@ -33,6 +34,10 @@ const routes: Routes = [
     {
         path: 'skills',
         component: SkillsComponent,
+    },
+    {
+        path: 'skills/:id',
+        component: SkillComponent,
     }
 ];
 

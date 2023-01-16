@@ -1,0 +1,72 @@
+.competence {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    #title {
+        font-size: 2em;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .desc {
+        font-size: 1.3em;
+        text-align: center;
+        padding: 10px;
+        width: 50%;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .pro_desc {
+        font-size: 1.3em;
+        text-align: center;
+        padding: 10px;
+        width: 50%;
+    }
+
+    .levels {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .level {
+            width: calc(100% / 3);
+            border: 2px solid gray;
+            border-radius: 10px;
+            background-color: #eee;
+            padding: 10px;
+            margin: 30px;
+            transition: all 0.2s ease-in-out;
+
+            h2 {
+                font-size: 1.5em;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            .level__title {
+                h2 {
+                    font-size: 1.1em;
+                    text-align: center;
+                }
+            }
+
+            .level__skills {
+                li {
+                    font-size: 1em;
+                }
+            }
+            &:hover{
+                background-color: #ddd;
+                transform: scale(1.075);
+            }
+        }
+    }
+}

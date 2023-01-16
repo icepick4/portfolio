@@ -1,5 +1,6 @@
 export class Competence{
     constructor(
+        public id: number,
         public title: string,
         public levels: Level[],
         public description: string,
