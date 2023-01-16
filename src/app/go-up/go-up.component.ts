@@ -30,12 +30,10 @@ export class GoUpComponent implements OnInit {
                 (document.body.scrollHeight - window.innerHeight)) *
             100;
         scroll = Math.round(scroll);
-        console.log(scroll)
         if(scroll > 20){
             this.showGoUp = true;
         }else{
             this.showGoUp = false;
         }
-        
     }
 }
