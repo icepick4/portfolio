@@ -6,7 +6,7 @@
     flex-direction: column;
 
     #title {
-        font-size: 2em;
+        font-size: 2.5em;
         font-weight: bold;
         text-align: center;
     }
@@ -19,7 +19,7 @@
     }
 
     h2 {
-        font-size: 1.5em;
+        font-size: 2em;
         font-weight: bold;
         text-align: center;
     }
@@ -46,7 +46,7 @@
             transition: all 0.2s ease-in-out;
 
             h2 {
-                font-size: 1.5em;
+                font-size: 1.7em;
                 font-weight: bold;
                 text-align: center;
             }
@@ -63,6 +63,44 @@
                     font-size: 1em;
                 }
             }
+            &:hover{
+                background-color: #ddd;
+                transform: scale(1.075);
+            }
+        }
+    }
+
+    .projets{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        margin-bottom: 2rem;
+        .projet{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #eee;
+            border: 2px solid gray;
+            border-radius: 5px;
+            width: 30%;
+            height: auto;
+            transition: all 0.2s ease-in-out;
+            .projet__desc{
+                font-size: 1em;
+                text-align: center;
+                padding: 10px;
+            }
+    
+            a{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
             &:hover{
                 background-color: #ddd;
                 transform: scale(1.075);

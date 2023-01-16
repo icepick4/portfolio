@@ -22,18 +22,17 @@
             </div>
         </div>
     </div>
+    <h2>Projets reliés</h2>
     <div class="projets">
-        <h2>Projets reliés</h2>
-        <div class="projets__list">
-            <div *ngFor="let level of skill.levels">
-                <div class="projet" *ngFor="let projet of level.projects">
-                    <a routerLink="/projects/{{projet}}">
-                        <div class="projet__title">
-                            <h2>{{projet}}</h2>
-                        </div>
-                    </a>
+        <div class="projet" *ngFor="let projet of projects">
+            <a routerLink="/projects/{{projet.id}}">
+                <div class="projet__title">
+                    <h2>{{projet.name}}</h2>
                 </div>
-            </div>
+                <div class="projet__desc">
+                    <p>{{projet.description}}</p>
+                </div>
+            </a>
         </div>
     </div>
 </div>
