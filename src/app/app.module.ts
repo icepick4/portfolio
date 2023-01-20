@@ -13,6 +13,7 @@ import { GoUpComponent } from './go-up/go-up.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { LinkImageComponent } from './link-image/link-image.component';
+import { ErrorCardComponent } from './error-card/error-card.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { LinkImageComponent } from './link-image/link-image.component';
     ContactComponent,
     AboutComponent,
     LinkImageComponent,
+    ErrorCardComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

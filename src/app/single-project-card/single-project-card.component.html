@@ -1,6 +1,6 @@
-<div class="project">
+<div class="project" *ngIf="project">
     <a routerLink="/projects" routerLinkActive="active" class="project__back">
-        <img src="../../assets/images/arrow.png" alt="Go back" class="logo go-back">
+        <img src="assets/images/arrow.png" alt="Go back" class="logo go-back">
     </a>
     <div class="project__title">
         <h1>{{ project.name }}</h1>
@@ -39,4 +39,7 @@
             <img [src]="getImageTool(tool)" alt="Tool image">
         </div>
     </div>
+</div>
+<div *ngIf="!project">
+    <app-error-card [error]="'Project not found'"></app-error-card>
 </div>

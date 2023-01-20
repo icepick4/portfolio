@@ -10,7 +10,6 @@
 <div class="content">
     <div *ngFor="let language of languages" id="languages"
         [ngClass]="language.animation == true ? 'animate' : 'disabled'" class="about">
-        <!-- <h3>{{language.title}}</h3> -->
         <img [src]="language.image" alt="{{language.title}}">
     </div>
 </div>
