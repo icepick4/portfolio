@@ -49,6 +49,13 @@
         width: 35vw;
         text-align: center;
         margin-top: 3rem;
+        padding: 15px;
+        border: 10px solid transparent;
+        border-image: url(../../assets/images/border.png) 100 round;
+        border-image-width: 10px;
+        border-image-outset: 7px;
+        background-color: #fff;
+
     }
 }
 

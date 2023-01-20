@@ -1,7 +1,7 @@
 <div class="container">
     <a [routerLink]="['/projects', project.id]" [id]="'project-'+project.id">
         <div class="image">
-            <img id="logo" [src]="project.image" [alt]="project.name + ' image'">
+            <img class="logo" [src]="project.image" [alt]="project.name + ' image'">
             <p id="title">{{project.name}}</p>
         </div>
     </a>

@@ -41,7 +41,7 @@ a {
     }
 }
 
-img:not(#logo) {
+img:not(.logo) {
     border-radius: 5px;
     border: 6px solid transparent;
     border-image: url("assets/images/border.png") 100 round;

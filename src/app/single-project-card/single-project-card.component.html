@@ -1,4 +1,7 @@
 <div class="project">
+    <a routerLink="/projects" routerLinkActive="active" class="project__back">
+        <img src="../../assets/images/arrow.png" alt="Go back" class="logo go-back">
+    </a>
     <div class="project__title">
         <h1>{{ project.name }}</h1>
     </div>
@@ -16,8 +19,7 @@
                 </app-link-image>
             </div>
         </div>
-        <app-link-image href="/projects" [image]="'assets/images/more.png'" [alt]="'Go back'" [router]="true">
-        </app-link-image>
+        
     </div>
     <div class="project__image">
         <img [src]="project.image" alt="Project image">
