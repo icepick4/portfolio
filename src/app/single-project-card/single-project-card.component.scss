@@ -10,7 +10,7 @@
         background: linear-gradient(90deg,
             rgba(131,58,180,1) 0%,
             rgba(253,29,29,1) 50%,
-            rgba(252,176,69,1) 100%
+            rgb(235, 91, 65) 100%
         );
         background-size: 100%;
         background-repeat: repeat;
@@ -54,18 +54,18 @@
 
     &__back{
         position: absolute;
-        top: 10%;
+        top: 7%;
         left: 0;
-        margin: 30px;
+        margin: 42px;
         .go-back {
-            width: 100px;
-            height: 100px;
+            width: 125px;
+            height: 125px;
             transform: rotate(270deg);
         }
         
         &:hover{
             cursor: pointer;
-            animation: bounce 0.5s ease-in-out infinite;
+            animation: bounce-horizontal 0.5s ease-in-out infinite;
         }
     }
 
@@ -114,19 +114,19 @@
             border-image-outset: 10px;
         }
         h3 {
-            font-size: 2vw;
+            font-size: 2.25rem;
         }
         .tool {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            gap: 5rem;
+            gap: 4rem;
             img {
-                height: 4vw;
+                height: 3.5vw;
             }
         }
-        gap: 5rem;
+        gap: 1.5rem;
         margin-bottom: 5rem;
     }
     h2 {
@@ -134,7 +134,7 @@
     }
 }
 
-@keyframes bounce {
+@keyframes bounce-horizontal {
     0% {
         transform: translateX(0);
     }
@@ -203,5 +203,7 @@
 }
 
 @media only screen and (hover: none) and (pointer: coarse) {
-    
+    .project__back{
+        display: none;
+    }
 }

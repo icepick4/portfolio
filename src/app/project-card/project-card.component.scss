@@ -46,7 +46,7 @@
 .container{
     @for $i from 1 through 11 {
         #project-#{$i} {
-            animation: animate-appear #{$i * 0.15 + 0.6}s ease-in-out;
+            animation: animate-appear #{$i * 0.15 + 0.4}s ease-in-out;
         }
     }
 }
