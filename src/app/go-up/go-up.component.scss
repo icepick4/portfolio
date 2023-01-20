@@ -36,10 +36,8 @@
 }
 
 @media only screen and (hover: none) and (pointer: coarse) {
-    .bottom-right {
-        &:hover {
-            animation: none;
-        }
+    #go-up{
+        display: none;
     }
 }
 
