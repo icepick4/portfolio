@@ -57,7 +57,7 @@ export class ProjectService {
             'https://icepick4.github.io/tower-of-hanoi/threejs/public/'
         ),
         new Project(
-            9,
+            12,
             'Directory manager',
             'This project is a C application that allows users to manage a digital directory. The application allows users to add, edit and delete contacts. Moreover, the application allows users to search for contacts, filter them and sort them.',
             'This project was created as part of my studies in the university. The main goal was to learn how to use the C language to manage data.',
@@ -77,7 +77,7 @@ export class ProjectService {
             'https://github.com/icepick4/timer-stats-rubiks-cube/archive/refs/heads/main.zip'
         ),
         new Project(
-            7,
+            10,
             'Portfolio',
             'This project is a web application that allows users to see my projects and contact me. The application is responsive and works on all devices. Moreover, now my portfolio is fully automated, I can add new projects and they will be automatically added to the portfolio with right badges for each languages, technos.',
             'I created this web site to show my projects and be able to share them in a professional way.',
@@ -87,7 +87,7 @@ export class ProjectService {
             'https://icepick4.github.io/portfolio/'
         ),
         new Project(
-            8,
+            9,
             'Memory game: One Piece',
             'This project is a game inspired by the Memory Game. The game is a simple memory game where the player must find all the pairs of cards. The memory design is inspired by the One Piece anime Universe. You can play either solo or with a friend, with 3 different difficulties (which change the number of cards).',
             'This project was created to practice Typescript and have fun with the One Piece Universe and creating a game !',
@@ -97,7 +97,7 @@ export class ProjectService {
             'https://icepick4.github.io/Memory-One-Piece/public'
         ),
         new Project(
-            10,
+            7,
             'TchouTchou',
             'This web site allows you to create an account and buy tickets for any train station in France. You can also see the train schedule and the train status and many other features like contact services and more.',
             'This project was created as part of my studies in the university. The main goal was to create an application managing a Database. So we decided to create a train station application.',
@@ -117,7 +117,7 @@ export class ProjectService {
             'https://github.com/icepick4/Connect-4/archive/refs/heads/main.zip'
         ),
         new Project(
-            12,
+            8,
             'PacSida',
             'This project is a game inspired by the Pacman game.  . We made a simple game where the player must eat all the points and avoid the virus, he can also eat the protections to be invincible for a short time. At the end, we finished at the second place in two challenges : AXOCapt\'Challenge (https://www.nuitdelinfo.com/inscription/defis/339) and Le chat l\'a attrapée (https://www.nuitdelinfo.com/inscription/defis/356).',
             'It was made by 5 students in one night. The goal was to create a serious game about the Virus Sida during an event called "La nuit de l\'info", you can learn more at this address : https://www.nuitdelinfo.com/. This game was made with the basics HTML, CSS and JavaScript.',
@@ -129,23 +129,7 @@ export class ProjectService {
     ];
 
     constructor() {
-        let sortNames: string[] = [
-            'Sonic Game',
-            'League Viewer',
-            'Daily steam stats',
-            'Tower of Hanoi',
-            'Graph map analysis',
-            "Rubik's Cube sessions manager",
-            'TchouTchou',
-            'PacSida',
-            'Memory game: One Piece',
-            'Portfolio',
-            'Connect 4',
-            'Directory manager',
-        ];
-        this.projects.sort((a, b) => {
-            return sortNames.indexOf(a.name) - sortNames.indexOf(b.name);
-        });
+        this.projects = this.projects.sort((a, b) => a.id - b.id);
     }
 
     getProjectById(id: number): Project {
