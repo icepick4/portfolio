@@ -116,6 +116,16 @@ export class ProjectService {
             'https://github.com/icepick4/Connect-4',
             'https://github.com/icepick4/Connect-4/archive/refs/heads/main.zip'
         ),
+        new Project(
+            12,
+            'PacSida',
+            'This project is a game inspired by the Pacman game.  . We made a simple game where the player must eat all the points and avoid the virus, he can also eat the protections to be invincible for a short time. At the end, we finished at the second place in two challenges : AXOCapt\'Challenge (https://www.nuitdelinfo.com/inscription/defis/339) and Le chat l\'a attrapée (https://www.nuitdelinfo.com/inscription/defis/356).',
+            'It was made by 5 students in one night. The goal was to create a serious game about the Virus Sida during an event called "La nuit de l\'info", you can learn more at this address : https://www.nuitdelinfo.com/. This game was made with the basics HTML, CSS and JavaScript.',
+            ['HTML', 'CSS', 'JavaScript'],
+            'assets/12/image.png',
+            'https://github.com/icepick4/nuit-de-l-info2022',
+            'https://ndli.rabec.eu/'
+        ),
     ];
 
     constructor() {
@@ -127,6 +137,7 @@ export class ProjectService {
             'Graph map analysis',
             "Rubik's Cube sessions manager",
             'TchouTchou',
+            'PacSida',
             'Memory game: One Piece',
             'Portfolio',
             'Connect 4',
