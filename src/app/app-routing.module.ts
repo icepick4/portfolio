@@ -38,7 +38,11 @@ const routes: Routes = [
     {
         path: 'skills/:id',
         component: SkillComponent,
-    }
+    },
+    {
+        path: '**',
+        redirectTo: '',
+    },
 ];
 
 @NgModule({

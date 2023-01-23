@@ -10,12 +10,12 @@ export class AboutService {
     constructor() {
         this.infos = [
             new About(
-                'Javascript',
+                'JavaScript',
                 'https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E',
                 Type.Language
             ),
             new About(
-                'Typescript',
+                'TypeScript',
                 'https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white',
                 Type.Language
             ),
@@ -166,7 +166,7 @@ export class AboutService {
         //get unique color for each name
         let hash = 0;
         for (let i = 0; i < name.length; i++) {
-            hash = name.charCodeAt(i) + ((hash << 5) - hash);
+            hash = name.charCodeAt(i) + ((hash << 10) - hash);
         }
         let color = '';
         for (let i = 0; i < 3; i++) {

@@ -47,13 +47,19 @@ export class AboutComponent implements OnInit {
     @HostListener('window:scroll', ['$event'])
     elementsVisible() {
         const nbAbouts = this.abouts.length;
-        // detect purcentage of scroll (remove header size)
-        let scroll =
+        let scroll, visible;
+        scroll =
             (window.scrollY /
                 (document.body.scrollHeight - window.innerHeight)) *
             100;
+        if (window.innerWidth < 768) {
+            scroll -= 35;
+            visible = Math.round((scroll * (nbAbouts + 15)) / 123);        
+        }
+        else{
+            visible = Math.round((scroll * nbAbouts) / 123);        
+        }
         scroll = Math.round(scroll);
-        let visible = Math.round((scroll * nbAbouts) / 123);
         if (!visible) {
             visible = 0;
         }
