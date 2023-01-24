@@ -138,7 +138,7 @@ export class CompetenceService {
                 ],
                 'Concevoir, gérer, administrer et exploiter les données de l\'entreprise et mettre à disposition toutes les informations pour un bon pilotage de l\'entreprise.',
                 'Lancer un nouveau projet, sécuriser des données, exploiter des données pour la prise de décisions',
-                [7]
+                [7,2]
             ),
             new Competence(
                 5,
