@@ -5,6 +5,7 @@ export class Competence{
         public levels: Level[],
         public description: string,
         public professionnalDesc: string,
+        public projects: number[],
     ) {}
 }
 
@@ -15,6 +16,5 @@ export class Level{
         public title: string,
         public id: number,
         public skills: string[],
-        public projects: number[],
     ) {}
 }

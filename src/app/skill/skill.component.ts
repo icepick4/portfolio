@@ -19,7 +19,6 @@ export class SkillComponent implements OnInit {
   ngOnInit(): void {
     const id = +this.route.snapshot.params['id'];
     this.skill = this.competenceService.getCompetenceById(id);
-    this.projects = this.skill.levels.map(level => this.projectService.getProjectById(level.projects[0]));
+    this.projects = this.skill.projects.map(id => this.projectService.getProjectById(id));
   }
-
 }

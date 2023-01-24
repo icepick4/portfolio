@@ -22,7 +22,6 @@ export class CompetenceService {
                             'Faire des essais et évaluer leurs résultats en regard des spécifications',
                             'Développer des interfaces utilisateurs',
                         ],
-                        [1]
                     ),
                     new Level(
                         'Partir des exigences et aller jusqu\'à une application complète',
@@ -33,7 +32,6 @@ export class CompetenceService {
                             'Adopter de bonnes pratiques de conception et de programmation',
                             'Vérifier et valider la qualité de l\'application par les tests',
                         ],
-                        [1]
                     ),
                     new Level(
                         'Adapter des applications sur un ensemble de supports (embarqué, web, mobile, IoT...)',
@@ -43,11 +41,11 @@ export class CompetenceService {
                             'Faire évoluer une application existante',
                             'Intégrer des solutions dans un environnement de production',
                         ],
-                        [1]
                     ),
                 ],
                 'Développer, c\'est à dire concevoir, coder, tester, et intégrer une solution informatique pour un client.',
                 'Elaborer une application informatique, faire évoluer une application informatique, maintenir en conditions opérationnelles une application informatique.',
+                [5,12,7],
             ),
             new Competence(
                 2,
@@ -61,7 +59,6 @@ export class CompetenceService {
                             'Comparer des algorithmes pour des problèmes classiques (tri simples, recherche...)',
                             'Formaliser et mettre en œuvre des outils mathématiques pour l\'informatique',
                         ],
-                        [1]
                     ),
                     new Level(
                         'Sélectionner les algorithmes adéquats pour répondre à un problème donné',
@@ -72,7 +69,6 @@ export class CompetenceService {
                             'Comprendre les enjeux et moyens de sécurisation des données et du code',
                             'Evaluer l\'impact environnemental et sociétal des solutions proposées',
                         ],
-                        [1]
                     ),
                     new Level(
                         'Analyser et optimiser des applications',
@@ -82,11 +78,11 @@ export class CompetenceService {
                             'Profiler, analyser et justifier le comportement d\'un code existant',
                             'Choisir et utiliser des bibliothèques et méthodes dédiées au domaine d\'application (imagerie, immersion, intelligence artificielle, jeux vidéos, parallélisme, calcul formel...)',
                         ],
-                        [1]
                     ),
                 ],
                 'Proposer des applications informatiques optimisées en fonction de critères spécifiques : temps d\'exécution, précision, consommation de ressources..',
                 'Améliorer les performances des programmes dans des contextes contraints. Limiter l\'impact environnemental d\'une application informatique. Mettre en place des applications informatiques adaptées et efficaces.',
+                [5, 12],
             ),
             new Competence(
                 3,
@@ -101,7 +97,6 @@ export class CompetenceService {
                             'Installer et configurer un système d\'exploitation et des outils de développement',
                             'Configurer un poste de travail dans un réseau d\'entreprise'
                         ],
-                        [1]
                     ),
                     new Level(
                         'Déployer des services dans une architecture réseau',
@@ -111,11 +106,11 @@ export class CompetenceService {
                             'Utiliser des serveurs et des services réseaux virtualisés',
                             'Sécuriser les services et données d\'un système'
                         ],
-                        [1]
                     ),
                 ],
                 'Installer, configurer, mettre à disposition, maintenir en conditions opérationnelles des infrastructures, des services et des réseaux et optimiser les systèmes informatiques d\'une organisation',
                 'Déployer une nouvelle architecture technique, améliorer une infrastructure existante, sécuriser les applications et les services.',
+                [7, 8]
             ),
             new Competence(
                 4,
@@ -129,7 +124,6 @@ export class CompetenceService {
                             'Visualiser des données',
                             'Concevoir une base de données relationnelle à partir d\'un cahier des charges',
                         ],
-                        [1]
                     ),
                     new Level(
                         'Optimiser une base de données, intéragir avec une application et mettre en oeuvre la sécurité',
@@ -140,11 +134,11 @@ export class CompetenceService {
                             'Organiser la restitution de données à travers la programmation et la visualisation',
                             'Manipuler des données hétérogènes',
                         ],
-                        [1]
                     ),
                 ],
                 'Concevoir, gérer, administrer et exploiter les données de l\'entreprise et mettre à disposition toutes les informations pour un bon pilotage de l\'entreprise.',
                 'Lancer un nouveau projet, sécuriser des données, exploiter des données pour la prise de décisions',
+                [7]
             ),
             new Competence(
                 5,
@@ -159,7 +153,6 @@ export class CompetenceService {
                             'Assurer le bon déroulement du projet en gérant les risques et en résolvant les problèmes éventuels',
                             'Mettre en place les processus de validation et de recette pour garantir la qualité du produit final.',
                         ],
-                        [1]
                     ),
                     new Level(
                         'Appliquer une démarche de suivi de projet en fonction des besoins métiers des clients et des utilisateurs',
@@ -170,11 +163,11 @@ export class CompetenceService {
                             'Identifier les critères de faisabilité d\'un projet informatique',
                             'Définir et mettre en œuvre une démarche de suivi de projet',
                         ],
-                        [1]
                     ),
                 ],
                 'Satisfaire les besoins des utilisateurs au regard de la chaîne de valeur du client, organiser et piloter un projet informatique avec des méthodes classiques ou agiles.',
-                'Lancer un nouveau projet, piloter le maintien d\'un projet en condition opérationnelle, faire évoluer un système d\'information.'
+                'Lancer un nouveau projet, piloter le maintien d\'un projet en condition opérationnelle, faire évoluer un système d\'information.',
+                [7, 8]
             ),
             new Competence(
                 6,
@@ -189,7 +182,6 @@ export class CompetenceService {
                             'Identifier les statuts, les fonctions et les rôles de chaque membre d\'une équipe pluridisciplinaire',
                             'Acquérir les compétences interpersonnelles pour travailler en équipe',
                         ],
-                        [1]
                     ),
                     new Level(
                         'Situer son rôle et ses missionsau sein d\'une équipe informatique',
@@ -200,7 +192,6 @@ export class CompetenceService {
                             'Mobiliser les compétences interpersonnelles pour travailler dans une équipe informatique',
                             'Rendre compte de son activité professionnelle',
                         ],
-                        [1]
                     ),
                     new Level(
                         'Manager une équipe informatique',
@@ -211,11 +202,11 @@ export class CompetenceService {
                             'Guider la conduite du changement informatique au sein d\'une organisation',
                             'Accompagner le management de projet informatique',
                         ],
-                        [1]
                     ),
                 ],
                 'Acquérir, développer et exploiter les aptitudes nécessaires pour travailler efficacement dans une équipe informatique.',
                 'Lancer un nouveau projet, organiser son travail en relation avec celui de son équipe, élaborer, gérer et transmettre de l\'information',
+                [7, 12, 5, 8],
             ),
         ];
     }
