@@ -14,7 +14,6 @@
         object-fit: cover;
         transition: all 0.3s ease-in-out;
     }
-
     #title{
         opacity: 0;
         left: 2%;
@@ -28,8 +27,7 @@
         color : #fff;
         user-select: none;
     }
-    margin-bottom: 1rem;
-
+    margin-bottom: 0.5rem;
     &:hover{
         img{
             transform: scale(1.15);
@@ -56,6 +54,7 @@
         img{
             transform: scale(1.1);
             filter: brightness(0.5);
+            height: 20rem;
         }
         #title{
             opacity: 1;
