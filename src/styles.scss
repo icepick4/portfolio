@@ -112,4 +112,9 @@ path {
     body {
         overflow-x: hidden;
     }
+
+    path {
+        transform-origin: 100% 100%;
+    }
+    
 }

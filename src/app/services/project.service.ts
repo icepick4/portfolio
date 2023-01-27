@@ -103,8 +103,8 @@ export class ProjectService {
             'This project was created as part of my studies in the university. The main goal was to create an application managing a Database. So we decided to create a train station application.',
             ['PHP', 'Oracle', 'HTML', 'CSS', 'JavaScript', 'Docker'],
             'assets/10/image.png',
-            'https://github.com.icepick/sae-sncf',
-            'http://tchoutchou.ovh:8080/'
+            'https://github.com/icepick4/TchouTchou',
+            'http://tchoutchou.ovh/'
         ),
         new Project(
             11,
