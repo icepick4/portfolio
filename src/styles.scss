@@ -70,23 +70,6 @@ path {
         transform: rotate(75deg);
     }
 }
-@-moz-keyframes path0 {
-    0% {
-        transform: rotate(-75deg);
-    }
-    100% {
-        transform: rotate(75deg);
-    }
-}
-@-webkit-keyframes path0 {
-    0% {
-        transform: rotate(-75deg);
-    }
-    100% {
-        transform: rotate(75deg);
-    }
-}
-
 @keyframes path1 {
     0% {
         transform: rotate(35deg);
@@ -95,23 +78,6 @@ path {
         transform: rotate(-35deg);
     }
 }
-@-moz-keyframes path1 {
-    0% {
-        transform: rotate(35deg);
-    }
-    100% {
-        transform: rotate(-35deg);
-    }
-}
-@-webkit-keyframes path1 {
-    0% {
-        transform: rotate(35deg);
-    }
-    100% {
-        transform: rotate(-35deg);
-    }
-}
-
 @keyframes path2 {
     0% {
         transform: rotate(-10deg);
@@ -120,40 +86,7 @@ path {
         transform: rotate(10deg);
     }
 }
-@-moz-keyframes path2 {
-    0% {
-        transform: rotate(-10deg);
-    }
-    100% {
-        transform: rotate(10deg);
-    }
-}
-@-webkit-keyframes path2 {
-    0% {
-        transform: rotate(-10deg);
-    }
-    100% {
-        transform: rotate(10deg);
-    }
-}
-
 @keyframes path3 {
-    0% {
-        transform: rotate(75deg);
-    }
-    100% {
-        transform: rotate(-75deg);
-    }
-}
-@-moz-keyframes path3 {
-    0% {
-        transform: rotate(75deg);
-    }
-    100% {
-        transform: rotate(-75deg);
-    }
-}
-@-webkit-keyframes path3 {
     0% {
         transform: rotate(75deg);
     }
@@ -185,4 +118,23 @@ path {
         transform-origin: 100% 100%;
     }
     
+    .background--custom {
+        background: linear-gradient(90deg, #69aaf6,#7bb2f0, #956df3);
+        background-size: 300% 300%;
+        animation: gradient 7s alternate infinite;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    @keyframes gradient {
+        0% {
+            background-position: 0%;
+        }
+        100% {
+            background-position: 100%;
+        }
+    }
 }
