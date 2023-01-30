@@ -15,7 +15,6 @@ export class Project {
         description: string,
         purpose: string,
         tools: string[],
-        image: string,
         urlGit: string,
         urlProject: string
     ) {
@@ -24,7 +23,7 @@ export class Project {
         this.description = description;
         this.purpose = purpose;
         this.tools = tools;
-        this.image = image;
+        this.image = `assets/${id}/image.png`
         this.urlGit = urlGit;
         this.urlProject = urlProject;
         this.visible = false;
