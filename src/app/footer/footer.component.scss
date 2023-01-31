@@ -4,7 +4,9 @@
     color: #777;
     font-size: 12px;
     width: 100%;
-    height: auto; 
+    height: auto;
+    display: flex;
+    flex-direction: column;
     .bottom-infos{
         border-top: 1px solid #000;
         p{

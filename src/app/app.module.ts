@@ -15,6 +15,7 @@ import { AboutComponent } from './about/about.component';
 import { LinkImageComponent } from './link-image/link-image.component';
 import { ErrorCardComponent } from './error-card/error-card.component';
 import { FooterComponent } from './footer/footer.component';
+import { LegalNoticesComponent } from './legal-notices/legal-notices.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { FooterComponent } from './footer/footer.component';
     LinkImageComponent,
     ErrorCardComponent,
     FooterComponent,
+    LegalNoticesComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
