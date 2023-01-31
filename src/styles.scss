@@ -1,14 +1,14 @@
 body {
     overflow-x: hidden;
-    background: linear-gradient(90deg, #4d96eb,#89bdf8, #918bec, #956df3);
+    background: linear-gradient(90deg, #4d96eb,#7aafeb, #8b91ec, #956df3);
     background-size: 300% 300%;
-    animation: gradient 7s alternate infinite;
+    animation: gradient 8s alternate infinite;
     top: 0;
     left: 0;
     margin: 0;
     padding: 0;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
 }
 
 @keyframes gradient {
