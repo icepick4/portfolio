@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
     selector: 'app-landing-page',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingPageComponent implements OnInit {
     mobile!: boolean;
-    constructor() {}
+    constructor(private title: Title) {}
 
     ngOnInit(): void {
         this.mobile = window.innerWidth < 1000;
+        this.title.setTitle('Rémi JARA');
     }
 }

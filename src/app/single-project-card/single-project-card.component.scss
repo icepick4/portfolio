@@ -121,6 +121,9 @@
             gap: 4rem;
             img {
                 height: 3.5vw;
+                &:hover{
+                    cursor: pointer;
+                }
             }
         }
         gap: 1.5rem;

@@ -1,4 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { About } from '../models/about.model';
 import { AboutService } from '../services/about.service';
 
@@ -14,7 +15,7 @@ export class AboutComponent implements OnInit {
     abouts!: About[];
     toolsTitle!: HTMLElement;
     hobbiesTitle!: HTMLElement;
-    constructor(private aboutService: AboutService) {}
+    constructor(private aboutService: AboutService, private title: Title) {}
 
     ngOnInit(): void {
         this.getAllLanguages();
@@ -24,6 +25,7 @@ export class AboutComponent implements OnInit {
         this.elementsVisible();
         this.toolsTitle = document.getElementById('tools-title')!;
         this.hobbiesTitle = document.getElementById('hobbies-title')!;
+        this.title.setTitle('About me');
     }
 
     ngOnDestroy() {
@@ -42,6 +44,10 @@ export class AboutComponent implements OnInit {
 
     getAllHobbies() {
         this.hobbies = this.aboutService.getAllHobbies();
+    }
+
+    visitPage(url: string) {
+        window.open(url, '_blank');
     }
 
     @HostListener('window:scroll', ['$event'])

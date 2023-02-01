@@ -33,6 +33,9 @@ h1 {
     width: 90%;
     img {
         height: 3vw;
+        &:hover{
+            cursor: pointer;
+        }
     }
     ul {
         margin: 0;
