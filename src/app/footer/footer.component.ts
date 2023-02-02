@@ -12,7 +12,6 @@ export class FooterComponent implements OnInit {
   pages!: string[];
   constructor(private router: Router) { 
     router.events.subscribe((val) => {
-      const url = this.router.url.split('/')[1];
       this.pagesToDisplay = this.pages.filter(page => page !== this.getCurrentPage());
     });
   }
