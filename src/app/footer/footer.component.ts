@@ -8,16 +8,23 @@ import { Router } from '@angular/router';
 })
 export class FooterComponent implements OnInit {
   year: Number = new Date().getFullYear();
-  currentPage: string;
   pagesToDisplay!: string[];
+  pages!: string[];
   constructor(private router: Router) { 
-    const url = this.router.url.split('/')[1];
-    this.currentPage = url;
+    router.events.subscribe((val) => {
+      const url = this.router.url.split('/')[1];
+      this.pagesToDisplay = this.pages.filter(page => page !== this.getCurrentPage());
+    });
   }
 
   ngOnInit(): void {
-    this.pagesToDisplay = ['home', 'projects', 'contact', 'about'];
-    this.pagesToDisplay = this.pagesToDisplay.filter(page => page !== this.currentPage);
+    this.pages = ['home', 'projects', 'contact', 'about'];
+    this.pagesToDisplay = this.pages.filter(page => page !== this.getCurrentPage());
   }
 
+  getCurrentPage(): string {
+    const url = this.router.url.split('/')[1];
+    const currentPage: string = url;
+    return currentPage;
+  }
 }
