@@ -19,7 +19,7 @@ export class ProjectService {
             2,
             'League Viewer',
             'This project is a web application that allows users to search for League of Legends champions and visualize their skins, lore and names.',
-            "This project was created to learn the famous framework, Angular. I choose to fetch League of Legends datas because it's one of my favourite game ! Moreover, I had to learn how to use the Riot Games API to get the data. It was a great learning experience, mostly because it was my first javascript framework.",
+            "This project was created to learn the famous framework, Angular. I choose to fetch League of Legends datas because it's one of my favourite game ! Moreover, I had to learn how to use the Riot Games API to get the data. It was a great learning experience, mostly because it was my first JavaScript framework.",
             ['Angular', 'TypeScript', 'SCSS', 'Riot Games API'],
             'https://github.com/icepick4/league-viewer',
             'https://icepick4.github.io/league-viewer/'
@@ -46,7 +46,7 @@ export class ProjectService {
             4,
             'Tower of Hanoi',
             'This project is a game inspired by the Tower of Hanoi. The game is a simple puzzle game where the player must move the disks from the first tower to the last one.',
-            'This project was created to practice Typescript and learn how to use Three.js (such a great library).',
+            'That project made me learn TypeScript, I firstly started with JavaScript then switched to TypeScript, I also learnt how to use Three.js (such a great library).',
             ['TypeScript', 'Three.js', 'CSS'],
             'https://github.com/icepick4/tower-of-hanoi',
             'https://icepick4.github.io/tower-of-hanoi/threejs/public/'
@@ -72,7 +72,7 @@ export class ProjectService {
         new Project(
             10,
             'Portfolio',
-            'This project is a web application that allows users to see my projects and contact me. The application is responsive and works on all devices. Moreover, now my portfolio is fully automated, I can add new projects and they will be automatically added to the portfolio with right badges for each languages, technos.',
+            'This project is a web application that allows users to see my projects and contact me. The application is responsive and works on all devices. Moreover, now my portfolio is fully automated, I can add new projects and they will be automatically added to the portfolio with right badges for each languages, technos. About the hosting, I manage it with an Apache server on my TrueNAS server.',
             'I created this web site to show my projects and be able to share them in a professional way.',
             ['Angular', 'TypeScript', 'SCSS', 'Apache server'],
             'https://github.com/icepick4/portfolio',
@@ -108,7 +108,7 @@ export class ProjectService {
         new Project(
             8,
             'PacSida',
-            'This project is a game inspired by the Pacman game.  . We made a simple game where the player must eat all the points and avoid the virus, he can also eat the protections to be invincible for a short time. At the end, we finished at the second place in two challenges : AXOCapt\'Challenge (https://www.nuitdelinfo.com/inscription/defis/339) and Le chat l\'a attrapée (https://www.nuitdelinfo.com/inscription/defis/356).',
+            'This project is a game inspired by the Pacman game. We made a simple game where the player must eat all the points and avoid the virus, he can also eat the protections to be invincible for a short time. We created this serious game as a team of 5 during a special event that took place in the whole France at the end, we finished at the second place in two challenges : "AXOCapt\'Challenge" (Captcha verification) and "Le chat l\'a attrapée" (accessibility).',
             'It was made by 5 students in one night. The goal was to create a serious game about the Virus Sida during an event called "La nuit de l\'info", you can learn more at this address : https://www.nuitdelinfo.com/. This game was made with the basics HTML, CSS and JavaScript.',
             ['HTML', 'CSS', 'JavaScript'],
             'https://github.com/icepick4/nuit-de-l-info2022',
