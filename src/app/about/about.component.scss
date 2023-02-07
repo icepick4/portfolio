@@ -51,7 +51,7 @@ h1 {
 }
 
 .animate {
-    @for $i from 1 through 26 {
+    @for $i from 1 through 27 {
         &:nth-child(even) {
             img {
                 &:nth-child(odd) {
