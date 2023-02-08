@@ -15,8 +15,10 @@ export class GoUpComponent implements OnInit {
         //scroll to the top of the page
         let scrollToTop = window.setInterval(() => {
             let pos = window.pageYOffset;
+            console.log(pos);
             if (pos > 0) {
-                window.scrollTo(0, pos - 40); // how far to scroll on each step
+                // how far to scroll on each step with purcentage of the current position
+                window.scrollTo(0, pos - pos / 60);
             } else {
                 window.clearInterval(scrollToTop);
             }
