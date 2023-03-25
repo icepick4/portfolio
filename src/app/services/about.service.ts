@@ -43,13 +43,13 @@ export class AboutService {
                 'Pygame',
                 'https://img.shields.io/badge/Pygame-2950C9?style=for-the-badge&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFUAAABaCAMAAAD+feq9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAADbUExURfr9AAD8bADibwGAX55uI9jMANvQAD1NKQD3bQDrbgDmbwCHYCk9I/j5AN7VANXHAO7sABcxH6F0IamBGgCQYQDwbc26AgDcbvPzAADMawDVbenkAACeZACpZtHBAOTdAKV6HgDBacavBbeXEACAX55vI66HF72hCwCAX55vIwC2aJ5vI55vI7GNFACAXwCAXwD9bJ1vIwCAX51vIwCAX5pvJQCAX55vI55vI55vI55vIwGAXiZ8TwCAX41yKmd1OACAX0Z5RFl3Pnh0MgCAXwCAXwD+bEdwTEdwTJRvMPwAAABJdFJOU/////////8D/////wj/////Df///////////////////////+3W///CPf8Zkv8ZMP+/1qlhJql6+O9ZR/93//+I////nI//AACfdJxPAAAHSUlEQVRYw92ZaXeiWBCGkQuisriiqIjihrtRo3Fpu7N05vT//0VTdUG8qODSzpcpTqJJTp5T1vJWXeD+/BfG/S+p2Yn0NKqye99P8HXfm6+mT6JK74SQHtBeCb6ZPIe6axOZkJUy6ZFCjZDX51DfiVyukfYU6INSgXw/h/qbyJUy+AgBKFdk8v4c6h58BVqv59JXu930llKIpkrgow2fHKxQGuBLuz1f7afSX1Cl6apNyIA3iSwXanxNlmVCrf17+jA1u2+jjwO+XK5USiW+VKmUy/bALAB7/qo8Rp38JkQ27VIqqSc805MpnudLZRO4e+kRahagBTulJ2Kx2EvsYIkkj2YXSPv1ESrkySzpsTNLoLupcoHMp/dTJ3NSqCRfXC9f/nmJnbhry1GNFkKVoFDh41eSFJq0+dgJFsrtt3QvNduDz5+0iYlhTdRIIcV6i87WSC97L3UKfc/rtlyjyRoEqTF0dgDq8ADVTiUSvE5hiVKSTdiLjoEl7d1jVD9LLy/BOsAqiEpXRARSiViIYXVFKhgXWlg1Xg+jYmAjiyCsslZQrqkka4kz6gq0QFIU6UaqlJ3sCamVQVKOxgYEi8AkPUXZLmazxdvyGlWa7F7fV705ypVcME2z5tmADYjuUpejtYDWeRtGUSevK8qjBnIqF6ihsBYqJ9QamS8EIZcf53OCMOuHUqXXnksrmLWBbaOsgq6WQFdBWCtsBFwq+SnknLSYbnbB3X4IdfINbpo1u1zBcKZSgWTpOpstl/rjp9AS0dJOTpgNL1JxoSjYFIiMRGi1MtRcE5jxuCg6gjCSLlFf28SsUGQU71gDQBVyRVGsGkZVS7eEzfYClQoqzyevI8FStAZ+CA1L1FSO4wzNygsL5ZwKBWrzEe10ogPYBR9C3qNyRtwRNv0zqoKCeiOUhhXUBahpj6pWiw0mshwrqMnboHR02YR8Cl3IlcFRZ8Wx0FmeUnGR8tT0plxBWMmXMPapqtYU1ttTKix/ldT1TL0cpiEIIaHlSqkQhbrFhIA7alTpNACJc9N1dyHAzvoQBMf3latCCGZKkIrJCuQK95QUH2oDGQOATXDwNQOd4AeWO85UNqyJCKK7DUC1YmH5vhpxCGw/SJ0EqdHQSg2hXzQAWFl4QSMUc8I20lfdJ9BF0LUKtbJt0n0ToF3LpXpFgOk6yVYgrp6rpTKslSiuB6NSS7X34yd8/iLqVZ2GFYsgDU0rndaAeawBupzwZVMmF+3HJzA9qJjhuPMiONTrN1tZ+iEjQPj4/EXt8/PzA+zz1xcicw3HolDRcF1VoQhaQmcYpO6xC9jmqRQwIz9xhnTR8vlGIwfWaDTyY6fpMcW6evD1EhU71u8td49CrRfyTtFKU7OsIjXLSkM9edB45uDqRSquQHwiIJ/kF6S5KEZZ3I/qZSq7rGAJgHyCq3SChCK1uu+pitk6p9Ii0ANrFDRPN+3+f72aOTdD5VijNZA9mQUoWskjlYoybR5Rq578v28qe2nn9QqnazivpQLUTzrsRM3gbjEjDtPg7URfJQis6aWLUjFZDcvXpKtXVWRk+zi5v+EgrPs1YCMVxhJTkJGWiTPJOlIlZhFOetSx15HXXTU0sXg+C1C4cWV11wGX+uUPkGumZjQxPWZGN7MR7dpQsugtxnWAVMeXz7ALkQYwYdUSLkxudPYbj+2wEqUOG58TGVZVVQ0jU61j9xZbgf2N3TRhIMgDT6wL2ATNo3zSCxjVah0u/Fava5qGRKvYbDVghV2GbMW7Od3bATrAHSJHqb6zah0UJu0bqk2z6bToVixsRsvQXRuxMiztIC3zGW2Co69cJj0GFXR18aCMdIEX1p1RX4o4F9B7IvSG2G7hUY8Cmm7lfWtQ4HrT6cBpoz+8ctpQpu+9+by3n0iLU1+NeJr5/MXmGLLeHw6z0h/p6slI+pOdTEB6PKrG1EBGYy0OM3Uh3XvfZeRT/eJUWaN6uryX+kapbG+pJyLVZBfhG6lbdxIYjK/el/ve0Jq59d3U/ga7QMwEfFUzrsOqoT5GXXboKKizTZ9x8kXqr9UtZth17WZqdkaVMCBa1YbQpSreEpzHsgVFkLfEgGpxarwZp0VRL1a14iOVdUhXiGzh+A8rgSgqBNZb+wxWT91KyMTh7DpSHrhT+rb2dpd4NeiualTTIKhhUY2mKiNBaDhFdyfIGIbq6XRVs5z86eH99nvF2dEGuLABFunGhs0fT1ticwwiHVDpO+9rbxcbuq2CrI4d0RmPu/kxjqj12U2R+55t9EedjavNLbGLLw0LjhWRzBuew0jSsL99G81g6YJFqoMTwjquPn/5dAcVzAIft2uhyaxpf0/FT75dboSW9TTqdp1r4XaiwIjIH49rf0kdzjBTsJ30O1hVwyc9NevPNpsRwpajxZUKuOdZ3LC/VA4D85nPDaXgG+nSnx5+GqkoWQXN/S65790f6E9Z5SFqNtzcv0mPPDmVXFPg64/7IklZ/1f4238BS+HYriWG4OEAAAAASUVORK5CYII=',
                 Type.Language,
-                'https://pygame.org/',
+                'https://pygame.org/'
             ),
             new About(
                 'C',
                 'https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black',
                 Type.Language,
-                'https://www.cprogramming.com/',
+                'https://www.cprogramming.com/'
             ),
             new About(
                 'HTML',
@@ -75,11 +75,24 @@ export class AboutService {
                 Type.Language,
                 'https://www.php.net/'
             ),
-            // new About(
-            //     'Symfony',
-            //     'https://img.shields.io/badge/Symfony-000000?style=for-the-badge&logo=symfony&logoColor=white',
-            //     Type.Language
-            // ),
+            new About(
+                'Tailwind CSS',
+                'https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white',
+                Type.Language,
+                'https://tailwindcss.com/'
+            ),
+            new About(
+                'Kotlin',
+                'https://img.shields.io/badge/Kotlin-BA55D3?style=for-the-badge&logo=kotlin&logoColor=white',
+                Type.Language,
+                'https://kotlinlang.org/'
+            ),
+            new About(
+                'Symfony',
+                'https://img.shields.io/badge/Symfony-000000?style=for-the-badge&logo=symfony&logoColor=white',
+                Type.Language,
+                'https://symfony.com/'
+            ),
             new About(
                 'MySQL',
                 'https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white',
@@ -162,7 +175,7 @@ export class AboutService {
                 'Computer Science',
                 'https://img.shields.io/badge/Computer_Science-CC6699?style=for-the-badge&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFFklEQVR4nO2dv4skRRTH6zKNVITD5PAHu5guGE5wuQaXGZnsBaLBcoEGCwfHgIlc5IKCCjfZ/AEbCMKGGy0YGRh5sIkGMuGlovUYh2tr3lTVbNV2VVd9PvBNbt+7qar+MLPV29NtDAAAAAAAAMAoHNgsnJwEes6UHh/HSv2Rp/5IqT8OvIZbfxaoP1F6DgI9TTKz+cfJeaBnpfT4WCj1Dzz1D5T6kGRu/SpQf670zAI9TYIACIAABgEQwCAAAgR6mgQBEAABDAIggEEABAj0NAkCIAACGARAAIMACBDoaRIEQAAEMAiAAKZxAQ5tHio5tbl0stxRu8mF0uOrXyj1c0/9XKlfBF7Drb8I1C+VntMdtYd7r3aFyERc40lcHt5gvasDARCg+EJONQjQeZoV4MrmKflfrpR1Ki6AXK48S4z8hutO7OmYk5gIsibuOsnapa5/0iXn2j5631wq/4YA22gCaGu3b0LnMbyMLcAdmzdTBjxhuhdADr58q+ba5t2UQU+UrgXYHPzNz69NfxJUKYB8j+08MUtlUEMB3IPfqwSaALJ2qesf+r7lraNtA4cCyGf+c6VG8tmoIy2LJkDxbWAOQgII92x+d2oejzjGGuhaAGEoQW8HX+heAEEk6OltfwgCFOBDm08z5BOb+zavJowFAQrws0nfZg3zwuY7m7s3GAsCFCC3AJv8YfPBnmOpUgDZn68SI5dI9SaA5C+bd/YYiyaArF3q+ofuWeSl9T8G3aYAktBFrkOqPBPYugDyFvt1hnxv1m/72vzfjxwLAkyc12x+M9tzfRTZjwAN8LnZnus3kb1VCpCDmncBudG+WPIssrfKXUAOECAOBGgABFBAgDgQoAEQQAEB4kCABmhOAO1++zcJAoTRBMix9qHnHXjhRNB+5Bag+IkgBNgPBIicBAJsgwAN0JwAR/9NKiVzZVAIsI0mwNykr7/vIVmjwDYwjiq3gTlAgDgQoAEQQAEB4kAAhSc2vzi5fwtjzMXrZn05+DBvR/YigMIzpdd3q9cpU6UApbeBvQswN4W3gaVPBPUuQPETQQgwHgiggAAIgACJSRKg9AUhvQtQ/IKQHLANjKPKbWAOECAOBFBAgAZAgDgQQAEBGgAB4kAABQQoDCeCxqPKE0EIMB4IoPCj0vtxyoQqBgEUvlJ6f0iZUMVUKUDpG0V+pPT+bdaXir1n80aG1EKVN4rMQcou4BWbP5X+nKmFKncBOUi9KvhY6UeACZHjsvBvlf8DASZCru8FfGHWt2OfsgDyMIx7O36GABG8ZfOlzU82v5r1w6ZSMxYisMz92uhPQ0OAhtkc/E2uzbYECNAo8ravffTIu8/wMblVCjDGgyNbR3sknkRuMX9nUFflgyNLnwlsBVcC9+ALVZ4JRIB8bCTQDr6AAB0gn/nawRcQoHOqFODAZpaYU2VQCLCNJoCsXer6H4w5CQ1tG3hl1hMmL3OlrFPxbWAONAFIXBCg8yBA50GAztOEAIdmPRE38hvupZPljtpNLpQeX/1CqZ976udK/SLwGm79RaB+qfSc7qg93Hu1J4RsUVzjQ8/aXSk9PrTzGL7LyrX7/IX20W79KlB/rvTMAj1NggAIgAAGARDAIAACBHqaBAEQAAEMAiCAQQAECPQ0CQIgAAIYBEAAgwAIEOhpEgRAAAQwCIAAplMB5HJl9972oe+xnSk9PrTnHfgeonSk1Ifut+/Wh+7Jc6L0FL90GwAAAAAAALrgX6GTTq++tzCcAAAAAElFTkSuQmCC',
                 Type.Hobby,
-                'https://github.com/icepick4',
+                'https://github.com/icepick4'
             ),
         ];
         //sort with title, shortest first
