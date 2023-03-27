@@ -8,55 +8,60 @@
     border-image-width: 19px;
     border-image-outset: 0px;
     position: relative;
-    img{
+    // width: 100%;
+    height: 90%;
+    img {
         width: 100%;
-        height: 25rem;
+        height: 100%;
         object-fit: cover;
         transition: all 0.3s ease-in-out;
     }
-    #title{
+    #title {
         opacity: 0;
         left: 2%;
-        position:absolute;
-        text-align:center;
+        position: absolute;
+        text-align: center;
         top: 26%;
         width: 98%;
         transition: all 0.3s ease-in-out;
         font-size: 2.5rem;
         font-weight: bold;
-        color : #fff;
+        color: #fff;
         user-select: none;
     }
     margin-bottom: 0.5rem;
-    &:hover{
-        img{
+    &:hover {
+        img {
             transform: scale(1.15);
             filter: brightness(0.3);
         }
-        #title{
+        #title {
             opacity: 1;
         }
         cursor: pointer;
     }
 }
 
-
-.container{
+.container {
     @for $i from 1 through 30 {
         #project-#{$i} {
             animation: animate-appear #{$i * 0.15 + 0.4}s ease-in-out;
         }
     }
+    height: 100%;
+    a {
+        height: 100%;
+    }
 }
 
-@media only screen and (hover: none) and (pointer: coarse){
-    .image{
-        img{
+@media only screen and (hover: none) and (pointer: coarse) {
+    .image {
+        img {
             transform: scale(1.1);
             filter: brightness(0.5);
             height: 20rem;
         }
-        #title{
+        #title {
             opacity: 1;
             top: 23%;
         }
@@ -75,4 +80,3 @@
         transform: scale(1, 1);
     }
 }
-  

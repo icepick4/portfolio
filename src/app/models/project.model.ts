@@ -23,7 +23,7 @@ export class Project {
         this.description = description;
         this.purpose = purpose;
         this.tools = tools;
-        this.image = `assets/${id}/image.png`
+        this.image = `assets/${name}/image.png`;
         this.urlGit = urlGit;
         this.urlProject = urlProject;
         this.visible = false;

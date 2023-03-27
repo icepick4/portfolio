@@ -80,7 +80,7 @@ export class ProjectService {
         ),
         new Project(
             9,
-            'Memory game: One Piece',
+            'Memory game One Piece',
             'This project is a game inspired by the Memory Game. The game is a simple memory game where the player must find all the pairs of cards. The memory design is inspired by the One Piece anime Universe. You can play either solo or with a friend, with 3 different difficulties (which change the number of cards).',
             'This project was created to practice Typescript and have fun with the One Piece Universe and creating a game !',
             ['TypeScript', 'HTML', 'CSS'],
@@ -122,11 +122,41 @@ export class ProjectService {
             ['Python', 'PyPi'],
             'https://github.com/icepick4/onepyece',
             'https://pypi.org/project/onepyece/'
-        )
+        ),
+        new Project(
+            7,
+            "BlaBl'App",
+            'This project is a mobile application that allows users to chat with other users on the same server. The application is responsive and works on all devices. Moreover, the docker image is open source so you can host your own server. The backend is made with Flask and the frontend is made with Kotlin.',
+            'This project was created as part of my studies in the university. The main goal was to create a mobile application using Kotlin. So we decided to create a chat application with a server as a group of 3.',
+            ['Kotlin', 'Flask', 'Docker'],
+            'https://github.com/BlaBl-App',
+            'https://github.com/BlaBl-App/BlaBl-App/releases/download/1.0/BalBl-App.apk'
+        ),
     ];
 
     constructor() {
-        this.projects = this.projects.sort((a, b) => a.id - b.id);
+        let list = [
+            'Sonic Game',
+            'League Viewer',
+            'Daily steam stats',
+            'Tower of Hanoi',
+            'Graph map analysis',
+            'OnePyece',
+            "BlaBl'App",
+            'TchouTchou',
+            'PacSida',
+            'Memory game One Piece',
+            'Portfolio',
+            "Rubik's Cube sessions manager",
+            'Connect 4',
+            'Directory manager',
+        ];
+        this.projects.sort((a, b) => {
+            return list.indexOf(a.name) - list.indexOf(b.name);
+        });
+        this.projects.forEach((project, index) => {
+            project.id = index + 1;
+        });
     }
 
     getProjectById(id: number): Project {
