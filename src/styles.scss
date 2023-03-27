@@ -1,11 +1,25 @@
 body {
-    height: 100vh;
-    width: 100vw;
+    overflow-x: hidden;
+    background: linear-gradient(90deg, #4d96eb,#7aafeb, #8b91ec, #956df3);
+    background-size: 300% 300%;
+    animation: gradient 8s alternate infinite;
+    top: 0;
+    left: 0;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
-    background-color: rgb(135, 189, 234);
+    height: 100vh;
+    width: 100vw;
 }
+
+@keyframes gradient {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 100%;
+    }
+}
+
 @font-face {
     font-family: "Monocraft";
     src: url("assets/fonts/Monocraft.otf");
@@ -62,6 +76,7 @@ path {
     top: 0;
     left: 0;
 }
+
 @keyframes path0 {
     0% {
         transform: rotate(-75deg);
@@ -95,15 +110,14 @@ path {
     }
 }
 
-//css for non mobile devices
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1000px){
     ::-webkit-scrollbar {
         width: 15px;
         overflow-y: scroll;
         background: #fff;
         box-shadow: inset 0 0 3px #707070;
     }
-
+    
     ::-webkit-scrollbar-thumb {
         background: #707070;
         border-radius: 10px;
@@ -113,5 +127,9 @@ path {
 @media only screen and (hover: none) and (pointer: coarse) {
     body {
         overflow-x: hidden;
+    }
+
+    path {
+        transform-origin: 100% 100%;
     }
 }

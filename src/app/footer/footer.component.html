@@ -1,0 +1,55 @@
+<div class="footer">
+    <div class="top-infos">
+        <div class="links">
+            <h1>
+                Useful links
+            </h1>
+            <div class="container">
+                <a href="https://www.linkedin.com/in/remijara/" target="_blank">
+                    <p>
+                        LinkedIn
+                    </p>
+                </a>
+                <a href="https://github.com/icepick4" target="_blank">
+                    <p>
+                        GitHub
+                    </p>
+                </a>
+                <a href="mailto:remi.jara4@gmail.com">
+                    <p>
+                        Email
+                    </p>
+                </a>
+            </div>
+        </div>
+        <div class="menu">
+            <h1>
+                Menu
+            </h1>
+            <div class="container">
+                <div *ngFor="let item of pagesToDisplay">
+                    <a [routerLink]="item">
+                        <p>
+                            {{item | titlecase}}
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="legal-notices">
+            <h1>
+                Legal notices
+            </h1>
+            <div class="container">
+                <a routerLink="/legal-notices">
+                    <p>
+                        Legal notices
+                    </p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-infos">
+        <p>© {{this.year}} Rémi JARA. All rights reserved.</p>
+    </div>
+</div>

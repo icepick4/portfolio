@@ -36,7 +36,7 @@
         <h2>Tools</h2>
         <div *ngFor="let tool of project.tools" class="tool">
             <h3>{{tool}}</h3>
-            <img [src]="getImageTool(tool)" alt="Tool image">
+            <img [src]="getImageTool(tool)" alt="Tool image" (click)="visitPage(getUrlTool(tool, project.urlGit))">
         </div>
     </div>
 </div>

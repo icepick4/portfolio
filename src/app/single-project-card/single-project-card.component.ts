@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 import { About } from '../models/about.model';
 import { Project } from '../models/project.model';
@@ -16,7 +17,8 @@ export class SingleProjectCardComponent implements OnInit {
     constructor(
         private projectService: ProjectService,
         private aboutService: AboutService,
-        private route: ActivatedRoute
+        private route: ActivatedRoute,
+        private title: Title
     ) {}
 
     ngOnInit(): void {
@@ -24,6 +26,7 @@ export class SingleProjectCardComponent implements OnInit {
         const id = +this.route.snapshot.params['id'];
         this.project = this.projectService.getProjectById(id);
         this.tools = [];
+        this.title.setTitle(this.project.name);
     }
 
     scrollToTop() {
@@ -32,5 +35,13 @@ export class SingleProjectCardComponent implements OnInit {
 
     getImageTool(tool: string) {
         return this.aboutService.getImageTool(tool);
+    }
+
+    getUrlTool(tool: string, projectUrl: string) {
+        return this.aboutService.getUrlTool(tool, projectUrl);
+    }
+
+    visitPage(url: string) {
+        window.open(url, '_blank');
     }
 }

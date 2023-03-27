@@ -1,0 +1,24 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: auto;
+    gap: 4rem;
+    h1{
+        font-size: 2.75rem;
+        margin: 0;
+    }
+}
+
+@media (max-width: 800px){
+    .content{
+        margin: 5%;
+        h1{
+            font-size: 2rem;
+        }
+    }
+}

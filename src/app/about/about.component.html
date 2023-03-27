@@ -8,22 +8,22 @@
 </div>
 <h1 id="languages-title" class="title-size">Languages & frameworks</h1>
 <div class="content">
-    <div *ngFor="let language of languages" id="languages"
-        [ngClass]="language.animation == true ? 'animate' : 'disabled'" class="about">
-        <img [src]="language.image" alt="{{language.title}}">
+    <div *ngFor="let language of languages" id="languages" class="about"
+        [ngClass]="language.animation == true ? 'animate' : 'disabled'" >
+            <img [src]="language.image" alt="{{language.title}}" (click)="visitPage(language.url)">
     </div>
 </div>
 <h1 id="tools-title" class="title title-size">Tools</h1>
 <div class="content">
     <div *ngFor="let tool of tools" id="tools" class="about"
         [ngClass]="tool.animation == true ? 'animate' : 'disabled'">
-        <img [src]="tool.image" alt="{{tool.title}}">
+        <img [src]="tool.image" alt="{{tool.title}}" (click)="visitPage(tool.url)">
     </div>
 </div>
 <h1 id="hobbies-title" class="title title-size">Hobbies</h1>
 <div class="content">
     <div *ngFor="let hobby of hobbies" id="hobbies" class="about"
         [ngClass]="hobby.animation == true ? 'animate' : 'disabled'">
-        <img [src]="hobby.image" alt="{{hobby.title}}">
+        <img [src]="hobby.image" alt="{{hobby.title}}" (click)="visitPage(hobby.url)">
     </div>
 </div>

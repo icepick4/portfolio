@@ -70,11 +70,8 @@
     }
 
     &__links {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        gap: 5rem;
+        display: grid;
+        gap: 2rem;
         margin-bottom: 3rem;
     }
 
@@ -124,6 +121,9 @@
             gap: 4rem;
             img {
                 height: 3.5vw;
+                &:hover{
+                    cursor: pointer;
+                }
             }
         }
         gap: 1.5rem;
@@ -163,21 +163,27 @@
             }
             h2 {
                 font-size: 2.5em;
+                border-image-width: 12px;
+                border-image-outset: 6px;
             }
             .tool {
                 img {
                     height: 3em;
                 }
             }
-            width: 65%;
+            width: 75%;
         }
         &__description {
-            width: 65%;
-            font-size: 1.5em;
+            width: 75%;
+            font-size: 1.3em;
+            border-image-width: 12px;
+            border-image-outset: 6px;
         }
         &__purpose {
-            width: 65%;
-            font-size: 1.5em;
+            width: 75%;
+            font-size: 1.3em;
+            border-image-width: 12px;
+            border-image-outset: 6px;
         }
         &__title {
             font-size: 2em;
@@ -190,7 +196,7 @@
 
         &__image {
             img {
-                width: 65%;
+                width: 75%;
             }
         }
     }
