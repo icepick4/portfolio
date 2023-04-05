@@ -5,7 +5,7 @@
     align-items: center;
     flex-direction: column;
 
-    &__back{
+    &__back {
         position: absolute;
         top: 7%;
         left: 0;
@@ -15,7 +15,7 @@
             height: 125px;
             transform: rotate(270deg);
         }
-        &:hover{
+        &:hover {
             cursor: pointer;
             animation: bounce-horizontal 0.5s ease-in-out infinite;
         }
@@ -79,48 +79,23 @@
                     font-size: 1em;
                 }
             }
-            &:hover{
+            &:hover {
                 background-color: #ddd;
                 transform: scale(1.075);
             }
         }
     }
 
-    .projets{
+    .projets {
         display: flex;
+        width: 100%;
         flex-direction: row;
         justify-content: center;
-        align-items: center;
-        gap: 2rem;
-        margin-bottom: 2rem;
-        .projet{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background-color: #eee;
-            border: 2px solid gray;
-            border-radius: 5px;
-            width: 30%;
-            height: auto;
+        .projet {
+            width: 35%;
+            padding: 10px;
+            margin: 30px;
             transition: all 0.2s ease-in-out;
-            .projet__desc{
-                font-size: 1em;
-                text-align: center;
-                padding: 10px;
-            }
-    
-            a{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
-
-            &:hover{
-                background-color: #ddd;
-                transform: scale(1.075);
-            }
         }
     }
 }

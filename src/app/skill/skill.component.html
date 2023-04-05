@@ -1,4 +1,3 @@
-
 <div class="competence">
     <a routerLink="/skills" routerLinkActive="active" class="competence__back">
         <img src="assets/images/arrow.png" alt="Go back" class="logo go-back">
@@ -28,15 +27,6 @@
     </div>
     <h2>Projets reliés</h2>
     <div class="projets">
-        <div class="projet" *ngFor="let projet of projects">
-            <a routerLink="/projects/{{projet.id}}">
-                <div class="projet__title">
-                    <h2>{{projet.name}}</h2>
-                </div>
-                <div class="projet__desc">
-                    <p>{{projet.description}}</p>
-                </div>
-            </a>
-        </div>
+        <app-project-card *ngFor="let project of projects" [project]="project" class="projet"></app-project-card>
     </div>
 </div>
