@@ -23,7 +23,7 @@ export class ProjectsComponent implements OnInit {
                 if (this.imageCount === this.projects.length) {
                     setTimeout(() => {
                         this.isLoading = false;
-                    }, 2000);
+                    }, 500);
                 }
             };
             image.src = project.image;

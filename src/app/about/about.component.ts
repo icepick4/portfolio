@@ -31,7 +31,7 @@ export class AboutComponent implements OnInit {
                 if (this.imageCount === this.abouts.length) {
                     setTimeout(() => {
                         this.isLoading = false;
-                    }, 1000);
+                    }, 500);
                 }
             };
             image.src = about.image;

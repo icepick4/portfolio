@@ -1,6 +1,6 @@
 body {
     overflow-x: hidden;
-    background: linear-gradient(90deg, #4d96eb,#7aafeb, #8b91ec, #956df3);
+    background: linear-gradient(90deg, #4d96eb, #7aafeb, #8b91ec, #956df3);
     background-size: 300% 300%;
     animation: gradient 8s alternate infinite;
     top: 0;
@@ -110,14 +110,14 @@ path {
     }
 }
 
-@media only screen and (min-width: 1000px){
+@media only screen and (min-width: 1000px) {
     ::-webkit-scrollbar {
         width: 15px;
         overflow-y: scroll;
         background: #fff;
         box-shadow: inset 0 0 3px #707070;
     }
-    
+
     ::-webkit-scrollbar-thumb {
         background: #707070;
         border-radius: 10px;
