@@ -20,7 +20,6 @@ export class ProjectsComponent implements OnInit {
             const image = new Image();
             image.onload = () => {
                 this.imageCount++;
-                console.log(this.imageCount);
                 if (this.imageCount === this.projects.length) {
                     setTimeout(() => {
                         this.isLoading = false;

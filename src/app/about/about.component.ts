@@ -28,7 +28,6 @@ export class AboutComponent implements OnInit {
             const image = new Image();
             image.onload = () => {
                 this.imageCount++;
-                console.log(this.imageCount);
                 if (this.imageCount === this.abouts.length) {
                     setTimeout(() => {
                         this.isLoading = false;
