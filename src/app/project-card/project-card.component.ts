@@ -10,6 +10,7 @@ import { Project } from '../models/project.model';
 export class ProjectCardComponent implements OnInit {
     @Input() project!: Project;
     typeProject!: string;
+    imageLoaded: boolean = false;
     constructor(private router: Router) {}
 
     ngOnInit(): void {
@@ -29,5 +30,9 @@ export class ProjectCardComponent implements OnInit {
 
     goAllProjects() {
         this.router.navigateByUrl('projects');
+    }
+
+    loaded() {
+        this.imageLoaded = true;
     }
 }

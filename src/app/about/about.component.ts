@@ -15,6 +15,8 @@ export class AboutComponent implements OnInit {
     abouts!: About[];
     toolsTitle!: HTMLElement;
     hobbiesTitle!: HTMLElement;
+    imageCount: number = 0;
+    isLoading: boolean = true;
     constructor(private aboutService: AboutService, private title: Title) {}
 
     ngOnInit(): void {
@@ -22,6 +24,19 @@ export class AboutComponent implements OnInit {
         this.getAllTools();
         this.getAllHobbies();
         this.abouts = this.languages.concat(this.tools, this.hobbies);
+        this.abouts.forEach((about) => {
+            const image = new Image();
+            image.onload = () => {
+                this.imageCount++;
+                console.log(this.imageCount);
+                if (this.imageCount === this.abouts.length) {
+                    setTimeout(() => {
+                        this.isLoading = false;
+                    }, 1000);
+                }
+            };
+            image.src = about.image;
+        });
         this.elementsVisible();
         this.toolsTitle = document.getElementById('tools-title')!;
         this.hobbiesTitle = document.getElementById('hobbies-title')!;
@@ -60,10 +75,9 @@ export class AboutComponent implements OnInit {
             100;
         if (window.innerWidth < 768) {
             scroll -= 35;
-            visible = Math.round((scroll * (nbAbouts + 15)) / 115);        
-        }
-        else{
-            visible = Math.round((scroll * nbAbouts) / 115);        
+            visible = Math.round((scroll * (nbAbouts + 15)) / 115);
+        } else {
+            visible = Math.round((scroll * nbAbouts) / 115);
         }
         scroll = Math.round(scroll);
         if (!visible) {
