@@ -12,6 +12,7 @@ export class ProjectsComponent implements OnInit {
     projects!: Project[];
     isLoading: boolean = true;
     imageCount: number = 0;
+    percentage: number = 0;
     constructor(private projectService: ProjectService, private title: Title) {}
 
     ngOnInit(): void {
@@ -20,6 +21,9 @@ export class ProjectsComponent implements OnInit {
             const image = new Image();
             image.onload = () => {
                 this.imageCount++;
+                this.percentage = Math.round(
+                    (this.imageCount / this.projects.length) * 100
+                );
                 if (this.imageCount === this.projects.length) {
                     setTimeout(() => {
                         this.isLoading = false;

@@ -5,25 +5,6 @@
     <div class="project__title">
         <h1>{{ project.name }}</h1>
     </div>
-    <div class="project__links">
-        <app-link-image [href]="project.urlGit" [image]="'assets/images/github.png'" [alt]="'View code on Github'"
-            class="link">
-        </app-link-image>
-        <div *ngIf="project.urlProject != ''">
-            <div *ngIf="project.urlProject.includes('.zip') || project.urlProject.includes('.jar')">
-                <app-link-image [href]="project.urlProject" [image]="'assets/images/link.png'" [alt]="'Download the project'">
-                </app-link-image>
-            </div>
-            <div *ngIf="!project.urlProject.includes('.zip') && !project.urlProject.includes('.jar')">
-                <app-link-image [href]="project.urlProject" [image]="'assets/images/link.png'" [alt]="'View website'">
-                </app-link-image>
-            </div>
-        </div>
-        
-    </div>
-    <div class="project__image">
-        <img [src]="project.image" alt="Project image">
-    </div>
     <div class="project__description">
         <h2>Description</h2>
         <p>{{ project.description }}</p>
@@ -31,6 +12,25 @@
     <div class="project__purpose">
         <h2>Purpose</h2>
         <p>{{ project.purpose }}</p>
+    </div>
+    <div class="project__image">
+        <img [src]="project.image" alt="Project image">
+    </div>
+    <div class="project__links">
+        <app-link-image [href]="project.urlGit" [image]="'assets/images/github.png'" [alt]="'View code on Github'"
+            class="link">
+        </app-link-image>
+        <div *ngIf="project.urlProject != ''">
+            <div *ngIf="project.urlProject.includes('.zip') || project.urlProject.includes('.jar')">
+                <app-link-image [href]="project.urlProject" [image]="'assets/images/link.png'"
+                    [alt]="'Download the project'">
+                </app-link-image>
+            </div>
+            <div *ngIf="!project.urlProject.includes('.zip') && !project.urlProject.includes('.jar')">
+                <app-link-image [href]="project.urlProject" [image]="'assets/images/link.png'" [alt]="'View website'">
+                </app-link-image>
+            </div>
+        </div>
     </div>
     <div class="project__tools">
         <h2>Tools</h2>

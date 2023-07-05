@@ -132,6 +132,15 @@ export class ProjectService {
             'https://github.com/BlaBl-App',
             'https://github.com/BlaBl-App/BlaBl-App/releases/download/1.0/BalBl-App.apk'
         ),
+        new Project(
+            5,
+            'Capitalympics',
+            'Capitalympics is a web application that helps you learn the flags and capitals of countries around the world. It provides a filtered learning experience by allowing you to focus on specific regions of the world. You can track your progress with individual scores for each country as well as an overall score. The application also allows you to view your statistics on your profile and sort and filter them by category.',
+            'I created this project out of passion. I learned Vue.js and Tailwind CSS for this project. The web app and the API are hosted on my own server with docker and Nginx, they are both open source and available on my GitHub.',
+            ['Vue.js', 'Tailwind CSS', 'MySQL', 'Three.js', 'Docker'],
+            'https://github.com/capitalympics',
+            'https://capitalympics.com/'
+        ),
     ];
 
     constructor() {

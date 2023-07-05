@@ -17,6 +17,7 @@ export class AboutComponent implements OnInit {
     hobbiesTitle!: HTMLElement;
     imageCount: number = 0;
     isLoading: boolean = true;
+    percentage: number = 0;
     constructor(private aboutService: AboutService, private title: Title) {}
 
     ngOnInit(): void {
@@ -28,6 +29,9 @@ export class AboutComponent implements OnInit {
             const image = new Image();
             image.onload = () => {
                 this.imageCount++;
+                this.percentage = Math.round(
+                    (this.imageCount / this.abouts.length) * 100
+                );
                 if (this.imageCount === this.abouts.length) {
                     setTimeout(() => {
                         this.isLoading = false;
