@@ -17,6 +17,7 @@ body {
         font-size: 1.4vw;
         width: 100%;
         cursor: pointer;
+        user-select: none;
     }
     .link-content {
         display: flex;
