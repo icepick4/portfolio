@@ -78,11 +78,10 @@ export class AboutComponent implements OnInit {
             100;
         if (window.innerWidth < 768) {
             scroll -= 35;
-            visible = Math.round((scroll * (nbAbouts + 15)) / 115);
+            visible = Math.round((scroll * (nbAbouts + 15)) / 105);
         } else {
-            visible = Math.round((scroll * nbAbouts) / 115);
+            visible = Math.round((scroll * nbAbouts) / 105);
         }
-        scroll = Math.round(scroll);
         if (!visible) {
             visible = 0;
         }

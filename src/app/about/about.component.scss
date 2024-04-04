@@ -7,7 +7,7 @@
     margin: 0 auto;
     width: 45%;
     justify-items: center;
-    margin: 0 auto;
+    margin-bottom: 10rem;
     h3 {
         font-size: 1.5rem;
         font-weight: 600;
@@ -33,7 +33,7 @@ h1 {
     width: 90%;
     img {
         height: 3vw;
-        &:hover{
+        &:hover {
             cursor: pointer;
         }
     }
@@ -51,7 +51,7 @@ h1 {
 }
 
 .animate {
-    @for $i from 1 through 27 {
+    @for $i from 1 through 32 {
         &:nth-child(even) {
             img {
                 &:nth-child(odd) {

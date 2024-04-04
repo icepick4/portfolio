@@ -133,11 +133,20 @@ export class ProjectService {
             ['Vue.js', 'TypeScript', 'Tailwind CSS', 'Swiper.js'],
             'https://github.com/icepick4',
             'https://levilea.fr/'
-        )
+        ),
+        new Project(
+            'LyricsLingua',
+            'LyricsLingua is a web application that allows you to translate lyrics from a song with AI.',
+            'I developed that web app to learn new concepts and frameworks. I learnt Nuxt and Stripe for this project.',
+            ['Nuxt', 'Tailwind CSS', 'Stripe', 'OpenAI', 'MongoDB', 'Resend'],
+            'https://github.com/icepick4',
+            'https://www.lyricslingua.com/'
+        ),
     ];
 
     constructor() {
         let list = [
+            'LyricsLingua',
             'Capitalympics',
             'Portfolio Levi Lea',
             'Sonic Game',
